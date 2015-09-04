@@ -1,0 +1,7 @@
+css:
+    fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css
+    bootstrap: //maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css
+js:
+    mustache: //cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js
+    jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
+    bootstrap: //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js
