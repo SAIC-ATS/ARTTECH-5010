@@ -1,0 +1,7 @@
+name: Experimental Media, 2015
+baseurl: /ExperimentalMedia2015
+url: https://bakercp.github.io/ExperimentalMedia2015
+description: Experimental Media, 2015
+timezone: America/Chicago
+gems:
+    - jekyll-sitemap
