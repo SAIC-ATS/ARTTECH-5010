@@ -17,8 +17,10 @@ due:        2015-09-11
 		- _Why?! We may occasionally cross-reference our oF work with Processing._
 	- Fritzing ([latest version](http://fritzing.org/download/))
 	- Git (follow the instructions for your platform here: [http://git-scm.com/downloads](http://git-scm.com/downloads))
+	- [Source Tree](https://www.sourcetreeapp.com/)
+	- [Atom.io](https://atom.io/)
 2. Sign up!
-	- Sign up for [http://github.com](http://github.com).  Just get a free account.
+	- Sign up for [http://github.com](http://github.com).  Just get a free account OR since you are students get a free private account [here](https://education.github.com/pack).
 	- Sign up for an account at [http://talk.olab.io](http://talk.olab.io).
 3. Set up!
 	- Read chapter 11 _Version control with Git
