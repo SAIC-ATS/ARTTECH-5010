@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% assign author = site.data.members %}
+{% assign author = site.data.people[page.author] %}
 
 <div class="page-header">
   <h1>
-  	{{ page.title }} <small>{{ page.date | date_to_string }} - {{ author.display_name }}{{ page.tags | array_to_sentence_string }}</small>
+  	{{ page.title }} <small>{{ page.date | date_to_string }} - {{ author.name }}{{ page.tags | array_to_sentence_string }}</small>
   </h1>
 </div>
 
