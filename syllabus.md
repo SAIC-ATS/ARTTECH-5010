@@ -101,8 +101,11 @@ _(subject to change based on incoming skills and experience)_
         - [MaxMSP/Jitter](http://cycling74.com/products/max/) vs. [VVVV](http://vvvv.org/) vs. [PD](http://puredata.info/) vs. [QuartzComposer](http://en.wikipedia.org/wiki/Quartz_Composer)
         - [Unity3D](http://unity3d.com/)
     - The future?
+#### Week 2
 - Survey of Creative Hardware Hacking Platforms
     - History
+        - PIC
+        - Basic Stamp
     - Contemporary Options w/ Examples
         - [Arduino](https://www.sparkfun.com/categories/103?page=all) (in all of its forms, clones, etc)
         - [Teensy](https://www.sparkfun.com/categories/267)
@@ -110,6 +113,7 @@ _(subject to change based on incoming skills and experience)_
         - Arm Devices
             - [Raspberry Pi](http://www.raspberrypi.org/)
                 - [Banana Pi](http://www.bananapi.org/)
+                - [Orange Pi](http://www.orangepi.org/)
                 - [ODROID-W](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G140610189490)
                 - [and on and on ...](http://www.pcworld.com/article/2599640/this-more-powerful-raspberry-pi-competitor-is-totally-free.html)
             - [Arduino Tre](http://arduino.cc/en/Main/ArduinoBoardTre)
@@ -126,7 +130,16 @@ _(subject to change based on incoming skills and experience)_
         - Arduino
         - Raspberry Pi
 
-#### Week 2
+- How do I approach a programming problem?
+    - Can you explain it in words?
+    - If not in words, can you draw it in pictures?
+    - Perhaps a "Finite State Machine"?
+    - Finite State Machines are composed of:
+        1. ... a finite number of "states".
+        2. ... inputs that change "states".
+        3. ... transitions between "states".
+
+#### Week 3
 - Introduction to the command line.
     - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
 - Introduction to git / github.
@@ -135,8 +148,6 @@ _(subject to change based on incoming skills and experience)_
 - Introduction to the ofSketch IDE.
     - https://github.com/olab-io/
     - https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md
-
-#### Week 3
 - Bookkeeping
     - Why are we using `git` + `http://github.com`?  Google Docs or Canvas would be a lot easier.
     - How do I get help when I am not sure how to do something?
