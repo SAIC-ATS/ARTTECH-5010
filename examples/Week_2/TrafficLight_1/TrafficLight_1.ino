@@ -5,7 +5,7 @@ const int greenLightPin = 10; // Set the green light's pin number.
 const int pedestrianRedLightPin = 3;
 const int pedestrianGreenLightPin = 2;
 
-const int buttonPin = 7;
+const int buttonPin = 4;
 
 // Create constant values (they can't be changed) that represent our 4 discrete states.
 const int STATE_RED = 0;
