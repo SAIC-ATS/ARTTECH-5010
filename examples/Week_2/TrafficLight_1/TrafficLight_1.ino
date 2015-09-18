@@ -144,6 +144,8 @@ void transitionToPedestrianGreen() {
 
   digitalWrite(pedestrianRedLightPin, LOW); // Turn off the yellow light.
   digitalWrite(pedestrianGreenLightPin, HIGH); // Turn on the green light.
+
+  wasButtonPressed = false;
 }
 
 bool timerComplete() {
