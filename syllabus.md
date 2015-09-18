@@ -91,7 +91,7 @@ _(subject to change based on incoming skills and experience)_
     - How does this fit in with other courses?  
     - History of course?
     - What does it mean for us?
-- Introduction to each other
+- Introduction to each other, generate reference to project of interest.
 - Survey of Creative Coding Platforms
     - History
     - Contemporary Options w/ Examples
@@ -104,9 +104,9 @@ _(subject to change based on incoming skills and experience)_
 #### Week 2
 - Survey of Creative Hardware Hacking Platforms
     - History
-        - PIC
-        - Basic Stamp
-    - Contemporary Options w/ Examples
+        - [PIC](https://en.wikipedia.org/wiki/PIC_microcontroller)
+        - [Basic Stamp](https://en.wikipedia.org/wiki/BASIC_Stamp)
+    - Contemporary Options with Examples
         - [Arduino](https://www.sparkfun.com/categories/103?page=all) (in all of its forms, clones, etc)
         - [Teensy](https://www.sparkfun.com/categories/267)
         - Mobile phones and similar devices
@@ -123,23 +123,58 @@ _(subject to change based on incoming skills and experience)_
         - The future?
 - So what are we going to focus on?
     - Software
-        - [openFrameworks](http://openframeworks.cc/) using [ofSketch](https://github.com/olab-io/ofSketch) (C/C++)
+        - [openFrameworks](http://openframeworks.cc/) using [ofSketch](https://github.com/olab-io/ofSketch) as our IDE (C/C++)
         - "Arduino" Language (C/C++)
     - Hardware
-        - Desktop / Laptop
+        - Desktop / Laptop / Raspberry Pi
         - Arduino
-        - Raspberry Pi
 
 - How do I approach a programming problem?
     - Can you explain it in words?
     - If not in words, can you draw it in pictures?
-    - Perhaps a "Finite State Machine"?
-    - Finite State Machines are composed of:
-        1. ... a finite number of "states".
-        2. ... inputs that change "states".
-        3. ... transitions between "states".
+    - For installations with a finite number of "states", you might use a "Finite State Machine"?
+        - Finite State Machines are composed of:
+            1. ... a finite number of "states".
+            2. ... inputs that change "states".
+            3. ... transitions between "states".
+        - Traffic light example and diagram.
 
 #### Week 3
+- Review traffic light example / homework.
+- Representing "reality" with computers.
+    - Digital vs. Analog circuits, audio, communication, etc.
+    - Analog to Digital Conversion (ADC)
+        - Sampling - Discretely Digitizing an Continuously Analog
+            - How do we turn a sample of a signal into a number?
+            - How do we represent a number with "switches" (aka binary)?
+                - Why switches? Why 1s and 0s?
+                - Binary representation can thought of as a "state machine", with each binary digit.
+                - Least Significant Bit (LSB) vs. Most Significant Bit (MSB)
+                - Big Endian vs. Little Endian
+                - Bit, nibble, byte, word (architecture-specific).
+                - bool, byte, long, unsigned long, etc.
+                - |, <<, >>, &, etc.
+                - Lots of tutorials on binary math and how it
+                    - Arduino `bitRead()`, `bitWrite()`, `bitClear()`, `bitSet()`, etc.
+        - [Aliasing](https://en.wikipedia.org/wiki/Aliasing) - When sampled signals can't be differentiated.
+    - Digital to Analog Conversion (DAC) - There's no "half way" for binary.
+        - Approaches
+            - Pulse Width Modulation (PWM)
+                - Duty Cycle - describes the percentage of time the signal is "on".
+                - Pulse frequency is independent of duty cycle.
+            - Dedicated DAC
+                - They are described as having X-bit DAC.
+                - They often have an analog smoothing filter.
+                - Example: https://www.sparkfun.com/products/12918
+
+- Microcontrollers
+    - Digital Input
+    - Digital Output
+    - Analog Input
+    - Analog "Ouput"
+
+#### Week 4
+
 - Introduction to the command line.
     - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
 - Introduction to git / github.
@@ -175,7 +210,6 @@ _(subject to change based on incoming skills and experience)_
             - Analog Input
             - Digital Input
 
-#### Week 4
 - Bookkeeping
     - Github / Terminal Questions
     - Ask for help!
