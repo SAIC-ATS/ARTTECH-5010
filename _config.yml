@@ -1,7 +1,7 @@
-name: Experimental Media, 2015
-baseurl: /ExperimentalMedia2015
-url: https://bakercp.github.io/ExperimentalMedia2015
-description: ATS 5010, Fridays 1:00 PM - 4:00 PM
+name: Experimental Media
+baseurl: /ARTTECH-5010
+url: https://saic-ats.github.io/ARTTECH-5010
+description: ATS 5010
 timezone: America/Chicago
 gems:
     - jekyll-sitemap
