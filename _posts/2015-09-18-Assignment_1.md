@@ -1,7 +1,7 @@
 ---
 layout:     assignment
 categories: assignment
-title:      Assignment 1
+title:      Assignment 2
 subtitle:   Digital Representation
 author:     bakercp
 date:       2015-09-18 00:00:00
