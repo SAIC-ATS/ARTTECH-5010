@@ -170,11 +170,35 @@ _(subject to change based on incoming skills and experience)_
 - Microcontrollers
     - Digital Input
     - Digital Output
-    - Analog Input
-    - Analog "Ouput"
 
 #### Week 4
 
+- Microcontrollers
+    - Analog Input
+        - ADC "bit depth" - Arduino UNO - 10 bit ADC
+        - AREF pin for reference voltage.
+        - Voltage Divider
+            - [https://cdn.sparkfun.com/assets/4/0/3/a/e/511948ffce395f7f47000000.png]
+            - [https://cdn.sparkfun.com/r/400-400/assets/6/3/e/5/e/511ac8f5ce395f5846000000.png]
+            - [https://cdn.sparkfun.com/assets/7/2/a/7/5/511acd39ce395f6746000000.png]
+            - Vout = Vin * (R2 / (R1 + R2))
+    - Analog "Output"
+
+- Basic Serial Communication
+    - What is serial communication?
+        - [https://learn.sparkfun.com/tutorials/serial-communication/rules-of-serial]
+    - What are bauds?
+        - 1 baud != 1 bit / second
+            - 9600 baud
+            - 1200 bytes / second = 1.2 kilobytes / second
+        - In natural language we often say a kilobyte is 1024 bytes (2^10), when it should be 10^3 or 1000 kilobytes
+        - Kilobytes (1000 bytes) vs. kibibytes (1024 bytes)
+            - kibi-, mebi-, gibi-, tebi-, pebi
+    - What are stop bits?
+    - What are
+
+
+#### Week 5
 - Introduction to the command line.
     - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
 - Introduction to git / github.
@@ -213,11 +237,7 @@ _(subject to change based on incoming skills and experience)_
 - Bookkeeping
     - Github / Terminal Questions
     - Ask for help!
-    - Basic Serial Communication
-        - What is serial communication?
-        - What is 9600 baud?
 
-#### Week 5
 - Drawing, Animation and Graphics.
 
 #### Week 6
