@@ -4,8 +4,8 @@ categories: assignment
 title:      Assignment 3
 subtitle:   Serial Communication
 author:     bakercp
-date:       2015-09-25 00:00:00
-due:        2015-09-25
+date:       2015-09-25 00:06:00
+due:        2015-10-02
 ---
 
 1. Make sure everything is complete from _Assignment 2_.
