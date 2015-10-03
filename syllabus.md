@@ -169,10 +169,11 @@ _(subject to change based on incoming skills and experience)_
 
 - Microcontrollers
     - Digital Input
+        - Pull up resistor.
+        - Pull down resistor.
     - Digital Output
 
 #### Week 4
-
 - Microcontrollers
     - Analog Input
         - ADC "bit depth" - Arduino UNO - 10 bit ADC
@@ -183,10 +184,21 @@ _(subject to change based on incoming skills and experience)_
             - [https://cdn.sparkfun.com/assets/7/2/a/7/5/511acd39ce395f6746000000.png]
             - Vout = Vin * (R2 / (R1 + R2))
     - Analog "Output"
+        - PWM
+        - Dedicated DAC
 
+#### Week 5
+- Communication
+    - Serial
+        - [more](https://learn.sparkfun.com/tutorials/serial-communication/rules-of-serial)
+        - [Picture](https://en.wikipedia.org/wiki/Parallel_communication#/media/File:Parallel_and_Serial_Transmission.gif)
+    - Parallel
+        - [Picture](https://en.wikipedia.org/wiki/Parallel_communication#/media/File:Parallel_and_Serial_Transmission.gif)
+- Hardware Hardware Communication
+    - I2C aka IIC (Inter-Integrated Circuit)
+    - SPI (Serial Peripheral Interface)
 - Basic Serial Communication
-    - What is serial communication?
-        - [https://learn.sparkfun.com/tutorials/serial-communication/rules-of-serial]
+    - What is UART (Universal Asynchronous Receiver / Transmitter)?
     - What are bauds?
         - 1 baud != 1 bit / second
             - 9600 baud
@@ -194,19 +206,29 @@ _(subject to change based on incoming skills and experience)_
         - In natural language we often say a kilobyte is 1024 bytes (2^10), when it should be 10^3 or 1000 kilobytes
         - Kilobytes (1000 bytes) vs. kibibytes (1024 bytes)
             - kibi-, mebi-, gibi-, tebi-, pebi
-    - What are stop bits?
-    - What are
+    - What are data bits?
+        - Usually 8 because that matches the size of an 8-bit byte in modern computing.
+    - What are parity bits?
+        - These can be used to detect transmission errors. They generally aren't used.
+    - What are stop bits (aka stop periods)?
+        - These mark the end of a character and are used to synchronize sender and receiver.
+    - Asynchronous vs. Synchronous Serial communication.
+    - Other ways
+        - http://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/
+- Serial on the Computer
+    - DB9 Connector
+    - USB to DB9 connector
+- Introduction to the ofSketch IDE.
+    - https://github.com/olab-io/
+    - https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md
 
+#### Week 6
 
-#### Week 5
 - Introduction to the command line.
     - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
 - Introduction to git / github.
     - https://github.com/olab-io/microWorkshops/blob/master/Git_Intro/Git_Intro.md
     - https://github.com/openframeworks/ofBook/blob/master/chapters/version_control_with_git/chapter.md
-- Introduction to the ofSketch IDE.
-    - https://github.com/olab-io/
-    - https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md
 - Bookkeeping
     - Why are we using `git` + `http://github.com`?  Google Docs or Canvas would be a lot easier.
     - How do I get help when I am not sure how to do something?
@@ -239,11 +261,9 @@ _(subject to change based on incoming skills and experience)_
     - Ask for help!
 
 - Drawing, Animation and Graphics.
-
-#### Week 6
 - Bookkeeping
     - DIY Orientations
-        - ATS Kinetics Lab Orientation/Authorization (go down during open access @ 4:15 ... be there @ the beginning!)
+        - ATS Kinetics Lab Orientation/Authorization
         - ATS I/O Lab Orientation/Authorization ()
         - CNC / Shop / Orientation [(http://www.artic.edu/webspaces/portal/irfm/shops.html]())
         - Advanced Output Center Orientation [http://crit.artic.edu/aoc/faq.php](http://crit.artic.edu/aoc/faq.php)
@@ -260,7 +280,7 @@ _(subject to change based on incoming skills and experience)_
             - `#include`
             - `#pragma once` vs. `#ifndef FOO ...`
     - Compiler
-        - The process of translating our C++ langauge instructions (code) into hardware-specific instructions (code).
+        - The process of translating our C++ language instructions (code) into hardware-specific instructions (code).
         - Usually produces object (`*.o`) files, usually behind the scenes.
     - Linker
         - Fuses all of the compiled object files and libraries (including 3rd party libraries) into an executable application.
@@ -275,11 +295,8 @@ _(subject to change based on incoming skills and experience)_
     keyboard,
     switches from the Arduino
 
----
-
 - Materials Roundup
     - e.g. [http://www.inventables.com/](http://www.inventables.com/) 
-
 
 #### Week 7
 - Object-Oriented-Programming (OOP) vs. ?
@@ -316,8 +333,6 @@ _(subject to change based on incoming skills and experience)_
         - Returning by pointer
         - What is "const"?
 
-- Arduino: simple analog sensors: button, light sensors
-
 - Variables in openFrameworks+Arduino:
     -   data types
     -   variables
@@ -344,11 +359,9 @@ _(subject to change based on incoming skills and experience)_
 
 -   Audio I/O
 -   Video I/O
--   Hardware Serial (RS-232) (talking to the arduino)
 
 -   Arduino:
 
--   Hardware Serial (RS-232) (talking to openFrameworks)
 -   Intermediate sensors (gyro, accelerometer, GPS, capacitive touch,
     etc)
 -   Audio/Video on the Arduino (Survey)
