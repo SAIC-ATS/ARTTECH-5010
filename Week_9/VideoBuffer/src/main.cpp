@@ -1,0 +1,105 @@
+#line 1 "VideoBuffer"
+
+#include "ofMain.h"
+
+
+class ofApp: public ofBaseApp
+{
+public:
+
+#line 1 "VideoBuffer"
+ofVideoGrabber grabber;
+
+std::vector<ofImage> buffer;
+int numFramesInBuffer;
+
+ofImage image;
+
+ofEasyCam cam;
+
+void setup() 
+{
+    ofEnableDepthTest();
+    ofSetWindowShape(1280, 720);
+    grabber.initGrabber(320, 240);	
+    image.allocate(320, 240, OF_IMAGE_COLOR_ALPHA);
+    numFramesInBuffer = 60;
+}
+
+
+void update() 
+{
+    grabber.update();
+    
+    if (grabber.isFrameNew()) 
+    {
+        image.setUseTexture(false);
+        
+        ofPixels& grabberPixels = grabber.getPixelsRef();
+        
+        for (int x = 0; x < grabber.getWidth(); x++)
+        {
+            for (int y = 0; y < grabber.getHeight(); y++)
+            {
+                ofColor grabberPixelColor = grabberPixels.getColor(x, y);
+                
+                if (grabberPixelColor.getLightness() < 50)
+                {
+                    image.setColor(x, y, ofColor(grabberPixelColor, 255));
+                }
+                else 
+                {
+                    image.setColor(x, y, ofColor(255, 0));
+                }
+            }
+        }
+        
+        image.setUseTexture(true);
+
+        // Upload the texture to the 
+        image.update();
+        
+        // Add the image to the buffer.
+        buffer.push_back(image);
+        
+        // Remove any extra images from the buffer.
+        while (buffer.size() > numFramesInBuffer)
+        {
+            buffer.erase(buffer.begin());   
+        }
+    }
+}
+
+void draw() {
+    ofBackgroundGradient(ofColor::white, ofColor::black);
+    
+    cam.begin();
+    
+    ofPushMatrix();
+    ofTranslate(-grabber.getWidth() / 2, -grabber.getHeight() / 2);
+    
+    for (std::size_t i = 0; i < buffer.size(); ++i)
+    {
+        float scale = ofMap(i, 0, buffer.size() - 1, 0.2, 1);
+        
+        ofPushMatrix();
+        ofTranslate(0, 0, i * 10);
+        ofScale(scale, scale, 1);
+        buffer[i].draw(0, 0);
+        ofPopMatrix();
+    }
+    
+    ofPopMatrix();
+
+    cam.end();
+}
+
+
+};
+
+int main()
+{
+    ofSetupOpenGL(320, 240, OF_WINDOW);
+    ofRunApp(new ofApp());
+}
+
