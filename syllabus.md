@@ -6,13 +6,13 @@ title:  Syllabus
 ## Experimental Media, ATS 5010
 
 Semester, Year
-:   Fall, 2015
+:   Fall, 2016
 
 Meeting Times
-:   Friday 1pm-4pm
+:   Friday 9am-12pm
 
 Meeting Location
-:   MacLean 426
+:   MacLean 401
 
 Instructor
 :   [Christopher Baker](http://christopherbaker.net)
@@ -71,7 +71,7 @@ Provided by the student as needed.
 _Tip: If you are going to be absent, late to class, or need to depart early, please contact me BEFORE class starts.  This is so I can make sure you have what you need to succeed!_
 
 ### Wait Lists  
-Students wait-listed for classes will be admitted on a space available basis determined by instructors’ discretion (in consultation with the department chair).
+Students wait-listed for classes will be admitted on a space available basis determined by instructor's discretion (in consultation with the department chair).
 
 ### Grading Procedure/Criteria
 Grades are credit / no-credit for this course. Credit for the course is given when _all_ assignments are completed.
@@ -99,8 +99,9 @@ _(subject to change based on incoming skills and experience)_
         - [openFrameworks](http://openframeworks.cc/) vs. [Nodebox](http://nodebox.net/)
         - [openFrameworks](http://openframeworks.cc/) vs. [libCinder](http://libcinder.org/)
         - [MaxMSP/Jitter](http://cycling74.com/products/max/) vs. [VVVV](http://vvvv.org/) vs. [PD](http://puredata.info/) vs. [QuartzComposer](http://en.wikipedia.org/wiki/Quartz_Composer)
-        - [Unity3D](http://unity3d.com/)
+        - [Unity3D](http://unity3d.com/) vs [Unreal Engine](https://www.unrealengine.com/)
     - The future?
+    
 #### Week 2
 - Survey of Creative Hardware Hacking Platforms
     - History
@@ -108,26 +109,34 @@ _(subject to change based on incoming skills and experience)_
         - [Basic Stamp](https://en.wikipedia.org/wiki/BASIC_Stamp)
     - Contemporary Options with Examples
         - [Arduino](https://www.sparkfun.com/categories/103?page=all) (in all of its forms, clones, etc)
-        - [Teensy](https://www.sparkfun.com/categories/267)
+          - Oh Arduino.
+            - Roots in [Wiring](http://wiring.org.co/) which has roots in Processing
+            - Arduino? Genuino? Arduino.org?
+              - [http://www.arduino.org/](http://www.arduino.org/) vs. [http://www.arduino.cc/](http://www.arduino.cc/)
+              - [One perspective here](http://makezine.com/2015/03/19/massimo-banzi-fighting-for-arduino/) and [another here](https://hackaday.com/2015/05/22/arduino-vs-arduino-these-are-not-the-droids/).
+          - Anyway, recent favorites ...
+            - [Teensy](https://www.sparkfun.com/categories/267)
+            - [ESP8266](https://www.sparkfun.com/products/13678)
+               - [Thing (ESP8266 + extras)](https://www.sparkfun.com/products/13711)
         - Mobile phones and similar devices
         - Arm Devices
             - [Raspberry Pi](http://www.raspberrypi.org/)
-                - [Banana Pi](http://www.bananapi.org/)
-                - [Orange Pi](http://www.orangepi.org/)
-                - [ODROID-W](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G140610189490)
-                - [and on and on ...](http://www.pcworld.com/article/2599640/this-more-powerful-raspberry-pi-competitor-is-totally-free.html)
-            - [Arduino Tre](http://arduino.cc/en/Main/ArduinoBoardTre)
+            - [Banana Pi](http://www.bananapi.org/)
+            - [Orange Pi](http://www.orangepi.org/)
+            - [ODROID-W](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G140610189490)
+            - [and on and on ...](http://www.pcworld.com/article/2599640/this-more-powerful-raspberry-pi-competitor-is-totally-free.html)
+            - [Arduino Tre](http://arduino.cc/en/Main/ArduinoBoardTre) [dead]
             - [Beagle Bone Black](http://beagleboard.org/black)
             - [PCDuino](http://www.pcduino.com/)
-            - [UDOO](http://www.udoo.org/)
+            - [UDOO](http://www.udoo.org/) [dead?]
         - The future?
 - So what are we going to focus on?
     - Software
-        - [openFrameworks](http://openframeworks.cc/) using [ofSketch](https://github.com/olab-io/ofSketch) as our IDE (C/C++)
+        - [openFrameworks](http://openframeworks.cc/) as our IDE (C/C++)
         - "Arduino" Language (C/C++)
     - Hardware
         - Desktop / Laptop / Raspberry Pi
-        - Arduino
+        - Arduino-compatible Microcontrollers
 
 - How do I approach a programming problem?
     - Can you explain it in words?
@@ -218,9 +227,6 @@ _(subject to change based on incoming skills and experience)_
 - Serial on the Computer
     - DB9 Connector
     - USB to DB9 connector
-- Introduction to the ofSketch IDE.
-    - https://github.com/olab-io/
-    - https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md
 
 #### Week 6
 
@@ -334,85 +340,60 @@ _(subject to change based on incoming skills and experience)_
         - What is "const"?
 
 - Variables in openFrameworks+Arduino:
-    -   data types
-    -   variables
-    -   math
-    -   mapping and scaling
-    -   repetition
-    -   randomness
+    - data types
+    - variables
+    - math
+    - mapping and scaling
+    - repetition
+    - randomness
 
 #### Week 9
-
--   Advanced Programming Theory / Syntax
-
--   openFrameworks/Arduino
-
--   Functions
--   OOP (Object oriented programming), Classes, Objects
--   Arrays
+- Advanced Programming Theory / Syntax
+- openFrameworks/Arduino
+- Functions
+- OOP (Object oriented programming), Classes, Objects
+- Arrays
 
 #### Week 9
-
--   Intermediate I/O
-
--   openFrameworks:
-
--   Audio I/O
--   Video I/O
-
--   Arduino:
-
--   Intermediate sensors (gyro, accelerometer, GPS, capacitive touch,
-    etc)
--   Audio/Video on the Arduino (Survey)
+- Intermediate I/O
+- openFrameworks:
+- Audio I/O
+- Video I/O
+- Arduino:
+  - Intermediate sensors (gyro, accelerometer, GPS, capacitive touch, etc)
+  - Audio/Video on the Arduino (Survey)
 
 #### Week 10
-
--   Intermediate I/O (continued)
+- Intermediate I/O (continued)
 
 #### Week 11
-
--   Advanced I/O (Input/Output)
--   openFrameworks:
-
--   Live Network feeds (push and pull)
--   Data persistence (saving data and preferences)
--   Database interface (MySQL, sqLite, XML, PHP/Web)
-
--   Arduino:
-
--   Wired/Wireless Networking (hardware vs. USB proxy)
--   Software serial (RS-232) talking to other Arduinos
--   Advanced sensor/device communication SPI
--   Advance IC interfacing / Bitbanging (bitwise operators)
-
--
+- Advanced I/O (Input/Output)
+- openFrameworks:
+  - Live Network feeds (push and pull)
+  - Data persistence (saving data and preferences)
+  - Database interface (MySQL, sqLite, XML, PHP/Web)
+- Arduino:
+  - Wired/Wireless Networking (hardware vs. USB proxy)
+  - Software serial (RS-232) talking to other Arduinos
+  - Advanced sensor/device communication SPI
+  - Advance IC interfacing / Bitbanging (bitwise operators)
 
 #### Week 13
-
--   Advanced Topics and Integration
-
--   - "The circle of life" agile digital fabrication and advanced output
-
--   scan, modify, print, repeat
--   Topics include:
-
--   advanced 2D output (vector/svg for laser cutter/CNC)
--   3D in openFrameworks (opengl)
--   advanced 3D output (DXF, Collada) for 3D printer
-
--   Creative 3D design with sensor data (arduino)
-
--   sensor data to 3D object
-
--   Introduction to 3D tools
-
--   Meshlab
--   Blender || Sketchup || Rhino
+- Advanced Topics and Integration
+  - "The circle of life" agile digital fabrication and advanced output scan, modify, print, repeat
+- Topics include:
+  - advanced 2D output (vector/svg for laser cutter/CNC)
+  - 3D in openFrameworks (opengl)
+  - advanced 3D output (DXF, Collada) for 3D printer
+  - Creative 3D design with sensor data (arduino)
+  - sensor data to 3D object
+  - Introduction to 3D tools
+  - Meshlab
+  - Blender || Sketchup || Rhino || Solidworks || Fusion 360?
 
 #### Week 14
--   Advanced Topics and Integration (continued)
+- Advanced Topics and Integration (continued)
 
 #### Week 15
 
--   Advanced Topics and Integration (continued)
+- Advanced Topics and Integration (continued)

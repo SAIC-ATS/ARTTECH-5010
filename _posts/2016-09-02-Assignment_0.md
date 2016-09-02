@@ -4,8 +4,8 @@ categories: assignment
 title:      Assignment 0
 subtitle:   Gitting Started with Git
 author:     bakercp
-date:       2015-09-03 18:00:00
-due:        2015-09-11
+date:       2016-09-02 18:00:00
+due:        2016-09-09
 ---
 
 1. Install!
@@ -40,4 +40,4 @@ due:        2015-09-11
 	- [http://lifewinning.com/](http://lifewinning.com/)
 	- [http://eva-franch.com/](http://eva-franch.com/)
 5. Get Equipment
-	- Acquire an Arduino UNO or newer ( in reality older ones with the Atmega 328 or better will be fine).  Arduino UNOs are available in SAIC resale or in the vending machines.  You are welcome to get a newer Arduino (like a Due), but you probably won’t need it.  That said. the Leonardo is pretty nice since it can emulate USB devices like a keyboard.  If you want advice about which board to get, post your question at [http://talk.olab.io](http://talk.olab.io).
+	- Acquire an Arduino UNO or newer (in reality older ones with the Atmega 328 or better will be fine).  Arduino UNOs are available in SAIC resale or in the vending machines.  You are welcome to get a newer Arduino (like a Due), but you probably won’t need it.  That said. the Leonardo is pretty nice since it can emulate USB devices like a keyboard.  If you want advice about which board to get, post your question at [http://talk.olab.io](http://talk.olab.io).
