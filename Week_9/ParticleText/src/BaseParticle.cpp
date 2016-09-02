@@ -19,7 +19,7 @@ void BaseParticle::update()
     lastPosition = position; // record the last position
 
     age++;
-    
+
     velocity += acceleration;
     position += velocity;
 
@@ -40,7 +40,7 @@ void BaseParticle::draw()
     // ofPushMatrix + ofTranslate + ofRotateZ ... + ofPopMatrix
     ofPushMatrix();
     ofTranslate(position);
-    ofRotateZ(heading); // rotate z angle
+    ofRotateZDeg(heading); // rotate z angle
 
     // draw the filled circle
     ofCircle(0,0,10);

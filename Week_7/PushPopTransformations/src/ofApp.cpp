@@ -32,7 +32,7 @@ void ofApp::draw()
     ofTranslate(centerX,centerY); // create a new origin @ centerX, centerY
     ofEllipse(0,0,10,10);
 
-    ofRotateZ(angleDegrees);
+    ofRotateZDeg(angleDegrees);
     ofLine(0,0,radius,0);
 
     // this push matrix will inherit the existing transformations
@@ -40,7 +40,7 @@ void ofApp::draw()
     ofTranslate(radius,0);
     ofEllipse(0,0,10,10);
 
-    ofRotateZ(angleDegrees);
+    ofRotateZDeg(angleDegrees);
     ofLine(0,0,radius,0);
 
     ofPushMatrix();
@@ -55,7 +55,7 @@ void ofApp::draw()
     ofPopMatrix();
 
 
-    
+
 
 }
 

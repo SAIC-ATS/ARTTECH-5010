@@ -23,7 +23,7 @@ void SpecialParticle::draw()
     // ofPushMatrix + ofTranslate + ofRotateZ ... + ofPopMatrix
     ofPushMatrix();
     ofTranslate(position);
-    ofRotateZ(heading); // rotate z angle
+    ofRotateZDeg(heading); // rotate z angle
 
     // draw the filled circle
     ofRect(-20,-20,40,40);
