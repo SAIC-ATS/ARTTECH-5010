@@ -4,11 +4,11 @@ categories: assignment
 title:      Assignment 1
 subtitle:   Finite State Machines
 author:     bakercp
-date:       2015-09-09 00:00:00
-due:        2015-09-16
+date:       2016-09-09 00:00:00
+due:        2016-09-16
 ---
 
-![The board](images/2015-09-09-Assignment_1_board.jpg)
+![The board](2015-09-09-Assignment_1_board.jpg)
 
 1. Analyze 3 or more of the following systems/behaviors using Finite State Machines.  
   - Your options are:
