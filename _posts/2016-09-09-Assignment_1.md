@@ -8,7 +8,7 @@ date:       2016-09-09 00:00:00
 due:        2016-09-16
 ---
 
-![The board](2016-09-09-Assignment_1_board.jpg)
+![The board](/ARTTECH-5010/images/2016-09-09-Assignment_1_board.jpg)
 
 
 1. Analyze 3 or more of the following systems/behaviors using Finite State Machines.  
