@@ -10,6 +10,7 @@ due:        2016-09-16
 
 ![The board](2015-09-09-Assignment_1_board.jpg)
 
+
 1. Analyze 3 or more of the following systems/behaviors using Finite State Machines.  
   - Your options are:
     1. A soda machine containing Orange Juice, Grape Juice, and Sparkling Water.  Attempt to model all of the normal vending behaviors of the machine, including a user purchasing a beverage, and a user attempting to purchase a sold-out-beverage.
