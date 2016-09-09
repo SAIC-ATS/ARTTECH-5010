@@ -101,7 +101,7 @@ _(subject to change based on incoming skills and experience)_
         - [MaxMSP/Jitter](http://cycling74.com/products/max/) vs. [VVVV](http://vvvv.org/) vs. [PD](http://puredata.info/) vs. [QuartzComposer](http://en.wikipedia.org/wiki/Quartz_Composer)
         - [Unity3D](http://unity3d.com/) vs [Unreal Engine](https://www.unrealengine.com/)
     - The future?
-    
+
 #### Week 2
 - Survey of Creative Hardware Hacking Platforms
     - History
@@ -144,12 +144,13 @@ _(subject to change based on incoming skills and experience)_
     - For installations with a finite number of "states", you might use a "Finite State Machine"?
         - Finite State Machines are composed of:
             1. ... a finite number of "states".
-            2. ... inputs that change "states".
-            3. ... transitions between "states".
+            2. ... a valid set of transitions between "states".
+            3. ... conditions that allow change the transitions between "states".
         - Traffic light example and diagram.
 
 #### Week 3
-- Review traffic light example / homework.
+- Continue Finite State Machine code to include traffic light.
+- Talk about homework of including a button with an additional state.
 - Representing "reality" with computers.
     - Digital vs. Analog circuits, audio, communication, etc.
     - Analog to Digital Conversion (ADC)

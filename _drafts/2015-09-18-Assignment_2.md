@@ -45,11 +45,13 @@ due:        2015-09-25
     - Watch: [Things - Counting in Binary on your Fingers](https://www.youtube.com/watch?v=apCLHmPsC68)
     - Remember: There are 10 kinds of people in the world.  Those who understand binary and those who don't.
 
-3. Analog Input
-    - Build and test the [Analog Input Example](https://www.arduino.cc/en/Tutorial/AnalogInput) with a potentiometer ("pot") and photo resistor.
-    - Extend the example to include two potentiometers and two leds.
-    - If you don't have the required components, you can get them at the media center. They are very cheap.
-    - Read [this](https://learn.sparkfun.com/tutorials/analog-to-digital-conversion) for more tips.
+3. Watch at least one of these videos [https://vimeo.com/eyeofestival/videos](https://vimeo.com/eyeofestival/videos).
 
-4. Analog Output
-    - Work through the [Analog Output Example](https://www.arduino.cc/en/Reference/AnalogWrite).
+
+
+2. Read: ofBook [OOps!](http://openframeworks.cc/ofBook/chapters/OOPs!.html)
+. Extend the in-class light example that we started to include a pedestrian crossing signal that can be initiated by a button.
+   	1. During normal operation (if the pedestrian cross button has not been pressed), the traffic light will function as it did in class.
+  	2. When the pedestrian presses the button, the traffic will not stop immediately, but will complete its cycle and then signal the pedestrian that it is safe to cross (using the two additional LEDs), and then the system will return to its normal traffic light operation.
+  	3. Before starting, modify the finite state machine diagram.  Identify and draw the additional states, transitions, and inputs associated with the pedestrian signal.
+  	4. We will be discussing the problem here: [https://ats.community/t/assignment-1-the-traffic-light](https://ats.community/t/assignment-1-the-traffic-light) If you are unable to access that page contact me!
