@@ -8,6 +8,11 @@ date:       2015-09-25 00:06:00
 due:        2015-10-02
 ---
 
+
+2. Review Binary Representation
+    - Watch: [Things - Counting in Binary on your Fingers](https://www.youtube.com/watch?v=apCLHmPsC68)
+    - Remember: There are 10 kinds of people in the world.  Those who understand binary and those who don't.
+
 1. Make sure everything is complete from _Assignment 2_.
     - Please take time to review the Cylon Example.
     - Key questions you are expected to be able to answer after this week.
@@ -51,4 +56,18 @@ due:        2015-10-02
     - [SerialCallResponseASCII](https://www.arduino.cc/en/Tutorial/SerialCallResponseASCII)
         - Note, you don't need force resistors for this example.  Simple buttons will suffice.
     - [SerialEvent](https://www.arduino.cc/en/Tutorial/SerialEvent)
+
+
+
+
+    3. Watch at least one of these videos [https://vimeo.com/eyeofestival/videos](https://vimeo.com/eyeofestival/videos).
+
+
+
+    2. Read: ofBook [OOps!](http://openframeworks.cc/ofBook/chapters/OOPs!.html)
+    . Extend the in-class light example that we started to include a pedestrian crossing signal that can be initiated by a button.
+       	1. During normal operation (if the pedestrian cross button has not been pressed), the traffic light will function as it did in class.
+      	2. When the pedestrian presses the button, the traffic will not stop immediately, but will complete its cycle and then signal the pedestrian that it is safe to cross (using the two additional LEDs), and then the system will return to its normal traffic light operation.
+      	3. Before starting, modify the finite state machine diagram.  Identify and draw the additional states, transitions, and inputs associated with the pedestrian signal.
+      	4. We will be discussing the problem here: [https://ats.community/t/assignment-1-the-traffic-light](https://ats.community/t/assignment-1-the-traffic-light) If you are unable to access that page contact me!
 5
