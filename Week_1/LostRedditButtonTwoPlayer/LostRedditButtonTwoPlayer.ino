@@ -1,46 +1,63 @@
-const int buttonPin = 4;
-const int countdownLedPin = 11;
-const int gameOveLedPin = 12;
+const int playerOneButtonPin = 4;
+const int playerTwoButtonPin = 3;
+const int playerOneWinningPin = 12;
+const int playerTwoWinningPin = 11;
+const int countdownLedPin = 10;
+const int gameOverLedPin = 9;
 
-int brightness = 255;
+int timer = 255;
+bool playerOneWinning = false;
+bool playerTwoWinning = false;
 
 void setup() {
-  pinMode(buttonPin, INPUT_PULLUP);
-  pinMode(countdownLedPin, OUTPUT);
-  pinMode(gameOveLedPin, OUTPUT);
+  pinMode(playerOneButtonPin, INPUT_PULLUP);
+  pinMode(playerTwoButtonPin, INPUT_PULLUP);
+
+  pinMode(playerOneWinningPin, OUTPUT);
+  pinMode(playerTwoWinningPin, OUTPUT);
+
+  pinMode(gameOverLedPin, OUTPUT);
 }
 
 void loop() {
-  bool buttonState = digitalRead(buttonPin);
+  bool playerOneButtonState = digitalRead(playerOneButtonPin);
+  bool playerTwoButtonState = digitalRead(playerTwoButtonPin);
 
-  // This is somewhat unintuitive. Normally this would be
-  // HIGH if the button is pressed, but when using INPUT_PULLUP
-  // the behavior is inverted.
-  if (buttonState == LOW)
+  if (playerOneButtonState == LOW)
   {
-    brightness = 255;
+    playerOneWinning = true;
+    playerTwoWinning = false;
+    timer = 255;
   }
-  else
+  else if (playerTwoButtonState == LOW)
   {
-    // If the brightness is above zero, decrement it.
-    if (brightness > 0)
-    {
-      brightness = brightness - 1;
-    }
-  }
-
-  if (brightness > 0)
-  {
-    analogWrite(countdownLedPin, brightness);
-    digitalWrite(gameOveLedPin, LOW);
+    playerOneWinning = true;
+    playerTwoWinning = false;
+    timer = 255;
   }
   else 
   {
-    analogWrite(gameOveLedPin, 0);
-    digitalWrite(countdownLedPin, HIGH);
+      if (timer > 0)
+      {
+        timer = timer - 1;
+      }
+  }
+  
+
+  // Render the variables!
+  digitalWrite(playerOneWinningPin, playerOneWinning);
+  digitalWrite(playerTwoWinningPin, playerTwoWinning);
+  analogWrite(countdownLedPin, timer);
+
+  if (timer > 0)
+  {
+    digitalWrite(gameOverLedPin, LOW);
+  }
+  else 
+  {
+    digitalWrite(gameOverLedPin, HIGH);
   }
 
   delay(10);
-
 }
 
