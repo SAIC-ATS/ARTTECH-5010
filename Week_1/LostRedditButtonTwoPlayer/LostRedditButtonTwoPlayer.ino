@@ -15,7 +15,7 @@ void setup() {
 
   pinMode(playerOneWinningPin, OUTPUT);
   pinMode(playerTwoWinningPin, OUTPUT);
-
+  pinMode(countdownLedPin, OUTPUT);
   pinMode(gameOverLedPin, OUTPUT);
 }
 
@@ -31,8 +31,8 @@ void loop() {
   }
   else if (playerTwoButtonState == LOW)
   {
-    playerOneWinning = true;
-    playerTwoWinning = false;
+    playerOneWinning = false;
+    playerTwoWinning = true;
     timer = 255;
   }
   else 
@@ -46,7 +46,7 @@ void loop() {
 
   // Render the variables!
   digitalWrite(playerOneWinningPin, playerOneWinning);
-  digitalWrite(playerTwoWinningPin, playerTwoWinning);
+  digitalWrite(playerTwoWinningPin, playerTwoWinning);   
   analogWrite(countdownLedPin, timer);
 
   if (timer > 0)
