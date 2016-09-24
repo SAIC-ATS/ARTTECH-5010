@@ -11,6 +11,8 @@ due:        2016-09-30
 
 <iframe src="https://player.vimeo.com/video/184083332" width="640" height="1120" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+_Enjoying more [AI Music](http://www.theverge.com/2016/6/1/11829678/google-magenta-melody-art-generative-artificial-intelligence) from Google?_
+
 1. Building off of [this week's examples](https://github.com/SAIC-ATS/ARTTECH-5010/tree/master/Week_03), attempt to recreate as many of the above patterns as you can in less than 2 hours.  Some recommendations:
   - For each pattern attempt to determine the following:
     - What do you observe changing? (e.g. led position? light intensity? timing? fading vs. on / of?)
