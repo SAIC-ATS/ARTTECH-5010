@@ -5,7 +5,7 @@ title:      Assignment 2
 subtitle:   Digital Representation
 author:     bakercp
 date:       2016-09-16 00:00:00
-due:        2015-09-23
+due:        2016-09-23
 ---
 
 1. Build a simulation of a single traffic light with a cross-walk button (red, yellow, green for the traffic light, and perhaps white, red for the cross walk signal).  There should be one button that, in its turn, allows pedestrians to cross the street.  Steps to complete:
