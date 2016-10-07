@@ -1,7 +1,6 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
 void ofApp::setup()
 {
     // you must use your own port number here!
@@ -13,7 +12,7 @@ void ofApp::setup()
     potValue = 0;
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::update()
 {
     // When we use Serial.println(value); in Arduino, the "println" sends the
@@ -39,12 +38,13 @@ void ofApp::update()
         // our buffer to later turn it into a number, but we instead want to
         // just want to ignore it.
         
-        if(myByte == '\\r') {
+        if (myByte == '\r')
+        {
             //cout << "myByte == '\r'!" << endl;
             // nothing -- we are waiting for the \n
         }
         // if it is not \r then we check to see if it is an \n
-        else if(myByte == '\n')
+        else if (myByte == '\n')
         {
             // if it IS an \n then we know the buffer is full and can be
             // converted into our int potValue for processing.
@@ -77,14 +77,14 @@ void ofApp::update()
     }
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::draw()
 {
     // since our pot value ranges from 0-1024, we need to map it onto a range
     // from 0-255 (which is what we use for colors).  We can use ofMap to do
     // this.  Please see the ofMap documentation to learn about the parameters.
 
-    int backgroundColor = ofMap(potValue,0,1024,0,255);
+    int backgroundColor = ofMap(potValue, 0, 1024, 0, 255);
 
     // now we set our pot value to control the background of our screen.
 
@@ -94,49 +94,4 @@ void ofApp::draw()
     cout << potValue << endl;
 
 
-}
-
-//------------------------------------------------------------------------------
-void ofApp::keyPressed(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::keyReleased(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::windowResized(int w, int h)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo)
-{
 }

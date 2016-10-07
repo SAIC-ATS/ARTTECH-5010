@@ -1,23 +1,25 @@
-ofSerial mySerial;
+#include "ofApp.h"
 
-// Our input buffer.
-std::string buffer;
 
-// The value of the potentiometer.
-int potValue = 0;
-
-void setup() {
+void ofApp::setup()
+{
 	mySerial.setup(0, 9600);
     // mySerial.setup("/dev/tty.usbmodem620711", 9600);
 }
 
-void draw() {
+
+void ofApp::update() {
     readSerialData();
     writeSerialData();
 }
 
 
-void readSerialData()
+void ofApp::draw()
+{
+}
+
+
+void ofApp::readSerialData()
 {
    	while (mySerial.available() > 0)
 	{
@@ -47,7 +49,7 @@ void readSerialData()
 }
 
 
-void writeSerialData()
+void ofApp::writeSerialData()
 {
 	// Map the pot value to brightness.
 	int brightness = ofMap(potValue, 0, 1023, 0, 255);
@@ -60,5 +62,5 @@ void writeSerialData()
     std::string outBuffer = ofToString(ledValue);
     outBuffer += '\n';
 
-    mySerial.writeBytes((unsigned char*)outBuffer.c_str(), outBuffer.length());    
+    mySerial.writeBytes((unsigned char*)outBuffer.data(), outBuffer.length());
 }
