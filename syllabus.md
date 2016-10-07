@@ -348,7 +348,7 @@ _(subject to change based on incoming skills and experience)_
     - repetition
     - randomness
 
-#### Week 9
+#### Week 8
 - Advanced Programming Theory / Syntax
 - openFrameworks/Arduino
 - Functions
