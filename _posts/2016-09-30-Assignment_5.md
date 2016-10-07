@@ -15,7 +15,7 @@ due:        2016-10-14
   - Modify your self-portrait to receive Serial data from the Arduino.
   - Create an Arduino application that can send _at least_ one button input and _at least_ one analog value (e.g. a potentiometer) that will modify
 
-  3. Review Serial Communication
+3. Review Serial Communication
     - What is "serial" communication?
     - What is "parallel" communication?
     - What does it mean for serial communication to be asynchronous?
