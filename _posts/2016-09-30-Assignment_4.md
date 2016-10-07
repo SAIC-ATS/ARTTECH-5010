@@ -21,27 +21,6 @@ due:        2016-10-07
     - Change colors by using `ofSetColor`.
     - You can enable or disable the filling of shapes with `ofFill()` and `ofNoFill()`.  Like color, this "state" will apply until you explicitly set it again.
 
-3. Review Serial Communication
-  - What is "serial" communication?
-  - What is "parallel" communication?
-  - What does it mean for serial communication to be asynchronous?
-      - What is an example?
-  - What does it mean for serial communication to be synchronous?
-      - What is an example?
-  - What does UART mean?
-  - What are I2C and SPI and when are they used?
-  - What is a "logic level" and what are common voltage values for logic levels?
-  - Why do we have to specify the communication speed when using UART-style serial communication?
-      - What are bauds?
-      - What are data bits?
-      - What are parity bits?
-      - What are stop bits?
-  - What are the difference between these four Arduino expressions?
-      - `Serial.print("127");`, `Serial.print(127);`, `Serial.println(127);` and `Serial.write(127);`?
-      - What are the advantages of using one over the others?
-  - What is "ASCII" and why is it used?
-  - If you are unsure of the answers any of those questions, look it up or check your notes.  If you are still are unclear post a question to the forum and we'll discuss it.
-
 2. Key questions you are expected to be able to answer after the project above.
     - Arrays
         - What is the difference between an array and a `std::vector`?

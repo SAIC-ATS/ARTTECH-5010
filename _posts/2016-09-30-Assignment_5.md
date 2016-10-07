@@ -10,16 +10,30 @@ due:        2016-10-14
 
 
 1. Building off of [this week's examples](https://github.com/SAIC-ATS/ARTTECH-5010/tree/master/Week_05).
-  - Specifically, take a look at the [Communication](https://github.com/SAIC-ATS/ARTTECH-5010/tree/master/Week_05/Communication) example for sending data back and forth between Arduino and openFrameworks. 
+  - Specifically, take a look at the [Communication](https://github.com/SAIC-ATS/ARTTECH-5010/tree/master/Week_05/Communication) example for sending data back and forth between Arduino and openFrameworks.
   - Augment your self-portrait to be controlled by input from the Arduino.
   - Modify your self-portrait to receive Serial data from the Arduino.
   - Create an Arduino application that can send _at least_ one button input and _at least_ one analog value (e.g. a potentiometer) that will modify
 
-2. Key questions you are expected to be able to answer after the project above.
-    - Arrays
-        - What is the difference between an array and a `std::vector`?
-    - Looping
-        - What is the difference between a standard `for`-loop and a range-`for` and why might you use one vs. the other?
+  3. Review Serial Communication
+    - What is "serial" communication?
+    - What is "parallel" communication?
+    - What does it mean for serial communication to be asynchronous?
+        - What is an example?
+    - What does it mean for serial communication to be synchronous?
+        - What is an example?
+    - What does UART mean?
+    - What are I2C and SPI and when are they used?
+    - What is a "logic level" and what are common voltage values for logic levels?
+    - Why do we have to specify the communication speed when using UART-style serial communication?
+        - What are bauds?
+        - What are data bits?
+        - What are parity bits?
+        - What are stop bits?
+    - What are the difference between these four Arduino expressions?
+        - `Serial.print("127");`, `Serial.print(127);`, `Serial.println(127);` and `Serial.write(127);`?
+        - What are the advantages of using one over the others?
+    - What is "ASCII" and why is it used?
     - If you are unsure of the answers any of those questions, look it up or check your notes.  If you are still are unclear post a question to the forum and we'll discuss it.
 
 2. Read: ofBook [OOps!](http://openframeworks.cc/ofBook/chapters/OOPs!.html)
