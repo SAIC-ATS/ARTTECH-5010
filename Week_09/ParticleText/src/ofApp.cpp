@@ -73,9 +73,9 @@ void ofApp::newParticle()
     std::shared_ptr<BaseParticle> particle(new WordParticle(font,nextWord));
 
     // set the particle up -- playing with these numbers makes a big difference!
-    particle->position = ofVec2f(ofGetWidth()/2,ofGetHeight()/2);
-    particle->velocity = ofVec2f(ofRandom(-5,5),ofRandom(-12,2));
-    particle->acceleration = ofVec2f(0,.1);
+    particle->position = glm::vec3(ofGetWidth()/2,ofGetHeight()/2, 0);
+    particle->velocity = glm::vec3(ofRandom(-5,5),ofRandom(-12,2), 0);
+    particle->acceleration = glm::vec3(0,.1, 0 );
     particle->maxAge = ofRandom(10,80);
 
     // make sure the particle knows about the particle system ...

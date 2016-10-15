@@ -1,12 +1,3 @@
-//
-//  BaseParticle.h
-//  ParticlesWithClass
-//
-//  Created by Christopher P. Baker on 10/4/13.
-//
-//
-
-
 #pragma once
 
 
@@ -29,4 +20,4 @@ public:
 
     int age;
 
-}; // don't forget the semi-colon after your class definition
+}; // Don't forget the semi-colon after your class definition.

@@ -1,11 +1,3 @@
-//
-//  BaseParticle.cpp
-//  ParticlesWithClass
-//
-//  Created by Christopher P. Baker on 10/4/13.
-//
-//
-
 #include "BaseParticle.h"
 
 
@@ -28,13 +20,14 @@ void BaseParticle::update()
 //    position.z += velocity.z;
 
     position += velocity;
+
 }
 
 void BaseParticle::draw()
 {
     //ofSetColor(255);
-    ofSetColor(ofMap(age,0,50,255,0));
+    ofSetColor(ofMap(age, 0, 50, 255, 0));
 
     ofFill();
-    ofCircle(position,10);
+    ofDrawCircle(position, 10);
 }

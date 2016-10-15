@@ -20,11 +20,11 @@ public:
 
     float getLife() const;
 
-    ofVec2f position;
-    ofVec2f lastPosition;
+    glm::vec3 position;
+    glm::vec3 lastPosition;
     
-    ofVec2f velocity;
-    ofVec2f acceleration;
+    glm::vec3 velocity;
+    glm::vec3 acceleration;
 
     float heading;
     

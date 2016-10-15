@@ -67,7 +67,7 @@ void BaseParticleGroup::draw()
         trails.addVertex(members[i]->position);
         trails.addColor(myColor);
 
-        ofVec2f diff = members[i]->position - members[i]->velocity;
+        auto diff = members[i]->position - members[i]->velocity;
 
         trails.addVertex(diff);
 

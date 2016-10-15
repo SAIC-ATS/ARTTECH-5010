@@ -67,32 +67,13 @@ void ofApp::draw()
 
     ofFill();
     ofSetColor(255);
-    ofCircle(x,y,10);
+    ofDrawCircle(x,y,10);
 
     ofDrawBitmapString("y="+ofToString(y)+"\n"+
                        "vy="+ofToString(velocityY),20,20);
 
 }
 
-//------------------------------------------------------------------------------
-void ofApp::keyPressed(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::keyReleased(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button)
-{
-}
 
 //------------------------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button)
@@ -102,22 +83,3 @@ void ofApp::mousePressed(int x, int y, int button)
     cout << "--" << endl;
 }
 
-//------------------------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::windowResized(int w, int h)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo)
-{
-}

@@ -11,6 +11,8 @@ void ofApp::setup()
 void ofApp::update() {
     readSerialData();
     writeSerialData();
+
+
 }
 
 
@@ -21,14 +23,14 @@ void ofApp::draw()
 
 void ofApp::readSerialData()
 {
-   	while (mySerial.available() > 0)
-	{
-	    int myByte = mySerial.readByte(); // Read the byte.
-            
+    while (mySerial.available() > 0)
+    {
+        int myByte = mySerial.readByte(); // Read the byte.
+
         if (myByte != '\n') // End of line character.
         {
-            // If it's not the end of the line character. 
-    	    buffer += (char)myByte;
+            // If it's not the end of the line character.
+            buffer += (char)myByte;
         }
         else 
         {

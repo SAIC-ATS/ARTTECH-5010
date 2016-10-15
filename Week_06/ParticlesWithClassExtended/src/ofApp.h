@@ -13,22 +13,12 @@ public:
     void update();
     void draw();
 
-    void keyPressed(int key);
-    void keyReleased(int key);
-    void mouseMoved(int x, int y);
-    void mouseDragged(int x, int y, int button);
-    void mousePressed(int x, int y, int button);
-    void mouseReleased(int x, int y, int button);
-    void windowResized(int w, int h);
-    void dragEvent(ofDragInfo dragInfo);
-    void gotMessage(ofMessage msg);
-
     void addRandomParticle();
 
+    std::size_t maxNumParticles = 500;
 
-    int maxNumberParticles;
-
-    std::vector< ofPtr<BaseParticle> > myParticles;
+    std::vector<std::shared_ptr<BaseParticle>> myParticles;
 
     ofEasyCam cam;
+
 };

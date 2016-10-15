@@ -59,7 +59,7 @@ void LetterParticle::kill()
                 {
                     const ofPolyline poly = resampled.getVertices();
 
-                    ofVec2f centroid = poly.getCentroid2D();  // find the middle
+                    auto centroid = poly.getCentroid2D();  // find the middle
 
                     // create a particle group
                     std::shared_ptr<BaseParticleGroup> particleGroup(new BaseParticleGroup());
@@ -71,7 +71,7 @@ void LetterParticle::kill()
 
                         // this is how we get the particle to move away from the center
                         // of the group (as calculated by the centroid)
-                        ofVec2f newVelocity = (poly[i] - centroid).normalized() * ofRandom(.5,2);
+                        auto newVelocity = glm::normalize(poly[i] - centroid) * ofRandom(.5,2);
 
                         particle->position = position + poly[i];
                         particle->velocity = velocity + newVelocity;

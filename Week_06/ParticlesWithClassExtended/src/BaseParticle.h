@@ -15,11 +15,11 @@ public:
     virtual void update();
     virtual void draw();
 
-    ofVec2f position;
-    ofVec2f lastPosition;
+    ofVec3f position;
+    ofVec3f lastPosition;
     
-    ofVec2f velocity;
-    ofVec2f acceleration;
+    ofVec3f velocity;
+    ofVec3f acceleration;
 
     int age;
     int maxAge;

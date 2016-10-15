@@ -23,15 +23,15 @@ void ParticleSystem::update()
 
 
 
-    ofVec2f mouse(ofGetMouseX(),ofGetMouseY());
+    glm::vec3 mouse(ofGetMouseX(),ofGetMouseY(), 0);
 
     for(int i = 0; i < _particles.size(); ++i)
     {
-        float distance = _particles[i]->position.distance(mouse);
+        float distance = glm::distance(_particles[i]->position, mouse);
         float activeDistance = 40;
         if(distance < activeDistance)
         {
-            ofVec2f oppositeDirectionvelocity = (_particles[i]->position - mouse).normalized() * ofMap(distance, 0, activeDistance, .1,.3);
+            auto oppositeDirectionvelocity = glm::normalize(_particles[i]->position - mouse) * ofMap(distance, 0, activeDistance, .1,.3);
             _particles[i]->velocity += oppositeDirectionvelocity;
 
         }

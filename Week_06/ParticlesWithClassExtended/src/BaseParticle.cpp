@@ -42,16 +42,16 @@ void BaseParticle::draw()
     ofRotateZ(heading); // rotate z angle
 
     // draw the filled circle
-    ofCircle(0,0,10);
+    ofDrawCircle(0,0,10);
 
     // draw the outline of the circle
     ofNoFill();
     ofSetColor(255,ofMap(age,0,maxAge,255,0));
-    ofCircle(0,0,10);
+    ofDrawCircle(0,0,10);
 
     // draw a heading line (this is pointing in the right direction
     // because we used ofRotateZ above ...
-    ofLine(0,0,20,0);
+    ofDrawLine(0,0,20,0);
 
     // pop the transformation matrix
     ofPopMatrix();

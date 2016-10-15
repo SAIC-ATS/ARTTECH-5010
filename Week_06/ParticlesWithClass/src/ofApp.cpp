@@ -1,7 +1,6 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
 void ofApp::setup()
 {
 
@@ -17,17 +16,16 @@ void ofApp::setup()
 //    mySecondParticle.velocity.x = -2;
 //    mySecondParticle.velocity.y = 2;
 
+    int numParticles = 500;
 
-    numParticles = 500;
-
-    for(int i = 0; i < numParticles; i++)
+    for (int i = 0; i < numParticles; i++)
     {
         BaseParticle particle;
 
-        particle.position.x = ofGetWidth()/2;//ofRandom(0,ofGetWidth());  // random x position
-        particle.position.y = ofGetHeight()/2;//ofRandom(0,ofGetHeight()); // random y position
+        particle.position.x = ofGetWidth() / 2;//ofRandom(0,ofGetWidth());  // random x position
+        particle.position.y = ofGetHeight() / 2;//ofRandom(0,ofGetHeight()); // random y position
 
-        particle.velocity.x = ofRandom(-5,5);  // random x velocity
+        particle.velocity.x = ofRandom(-5, 5);  // random x velocity
         particle.velocity.y = ofRandom(-5);  // random y velocity
 
         particle.acceleration.y = .4;
@@ -38,20 +36,20 @@ void ofApp::setup()
 
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::update()
 {
 //    myFirstParticle.update();
 //    mySecondParticle.update();
 
-    for(int i = 0; i < numParticles; i++)
+    for(int i = 0; i < myParticles.size(); i++)
     {
         myParticles[i].update();
     }
 
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::draw()
 {
     ofBackground(0);
@@ -59,54 +57,9 @@ void ofApp::draw()
 //    myFirstParticle.draw();
 //    mySecondParticle.draw();
 
-    for(int i = 0; i < numParticles; i++)
+    for (int i = 0; i < myParticles.size(); i++)
     {
         myParticles[i].draw();
     }
 
-}
-
-//------------------------------------------------------------------------------
-void ofApp::keyPressed(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::keyReleased(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::windowResized(int w, int h)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo)
-{
 }

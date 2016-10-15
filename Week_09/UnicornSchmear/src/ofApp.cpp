@@ -1,58 +1,46 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
 void ofApp::setup()
 {
-    ofEnableAlphaBlending();
-
-    drawVertexIndicies = false;
-
-    image.loadImage("image.png");
-    alphaImage.loadImage("image_a.png");
-
-    maxPoints = 100;
-
-    useAlphaImage = false;
+    image.load("image.png");
+    alphaImage.load("image_a.png");
 }
 
-//------------------------------------------------------------------------------
-void ofApp::update()
-{
-}
 
-//------------------------------------------------------------------------------
 void ofApp::draw()
 {
-    ofBackgroundGradient(ofColor::white,ofColor::black);
+    ofBackgroundGradient(ofColor::white, ofColor::black);
 
-    // clear out my mesh
-    mesh.clear();
+    ofMesh mesh;
 
     mesh.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
     mesh.enableColors();
 
-    for(std::size_t i = 0; i < polyline.size(); ++i)
+    for (std::size_t i = 0; i < polyline.size(); ++i)
     {
-        ofVec2f currentPoint = polyline[i];
+        ofVec3f currentPoint = polyline[i];
 
-        ofVec2f normalPoint = polyline.getNormalAtIndex(i);
+        ofVec3f normalPoint = polyline.getNormalAtIndex(i);
+
+        std::cout << normalPoint << " / " << normalPoint.normalize() << std::endl;
+
 
         float distance = 0;
 
-        if(i > 0)
+        if (i > 0)
         {
-            distance = currentPoint.distance(polyline[i-1]);
+            distance = currentPoint.distance(polyline[i - 1]);
         }
 
-        float strokeWidth = ofMap(distance,0,100,100,255,true);
-        float alpha = ofMap(distance,0,100,200,255,true);
+        float strokeWidth = 5;//ofMap(distance, 0, 100, 100, 255, true);
+        float alpha = ofMap(distance, 0, 100, 200, 255, true);
 
         mesh.addVertex(currentPoint + (normalPoint * strokeWidth));
-        mesh.addColor(ofColor(255,alpha));
+        mesh.addColor(ofColor(255, alpha));
 
         mesh.addVertex(currentPoint - (normalPoint * strokeWidth));
-        mesh.addColor(ofColor(255,alpha));
+        mesh.addColor(ofColor(255, alpha));
 
         float imageWidth = image.getWidth();
         float imageHeight = image.getHeight();
@@ -62,18 +50,17 @@ void ofApp::draw()
         imageHeight = 1;
 #endif
 
-        float currentTextureY = ofMap(i,0,polyline.size(),0,imageHeight);
+        float currentTextureY = ofMap(i, 0, polyline.size(), 0, imageHeight);
 
-        ofVec2f textureCoordinate0 = ofVec2f(0,currentTextureY);
-        ofVec2f textureCoordinate1 = ofVec2f(imageWidth,currentTextureY);
+        ofVec2f textureCoordinate0 = ofVec2f(0, currentTextureY);
+        ofVec2f textureCoordinate1 = ofVec2f(imageWidth, currentTextureY);
 
         mesh.addTexCoord(textureCoordinate0);
         mesh.addTexCoord(textureCoordinate1);
 
-
     }
 
-    if(useAlphaImage)
+    if (useAlphaImage)
     {
         alphaImage.bind();
     }
@@ -84,7 +71,7 @@ void ofApp::draw()
 
     mesh.draw();
 
-    if(useAlphaImage)
+    if (useAlphaImage)
     {
         alphaImage.unbind();
     }
@@ -94,14 +81,12 @@ void ofApp::draw()
     }
 
 
-    if(drawVertexIndicies)
+    if (drawVertexIndicies)
     {
-        for(std::size_t i = 0; i < polyline.size(); ++i)
+        for (std::size_t i = 0; i < polyline.size(); ++i)
         {
-            ofVec2f currentPoint = polyline[i];
-
-            ofDrawBitmapStringHighlight(ofToString(i),currentPoint);
-
+            ofVec3f currentPoint = polyline[i];
+            ofDrawBitmapStringHighlight(ofToString(i), currentPoint);
         }
     }
 
@@ -109,46 +94,46 @@ void ofApp::draw()
 }
 
 
-//------------------------------------------------------------------------------
+
 void ofApp::keyPressed(int key)
 {
-    if('c' == key)
+    if ('c' == key)
     {
         polyline.clear();
     }
-    else if('i' == key)
+    else if ('i' == key)
     {
         drawVertexIndicies = !drawVertexIndicies;
     }
-    else if('a' == key)
+    else if ('a' == key)
     {
         useAlphaImage = !useAlphaImage;
     }
-    else if(' ' == key)
+    else if (' ' == key)
     {
         ofToggleFullscreen();
     }
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::mouseDragged(int x, int y, int button)
 {
-    ofVec2f mouse(x,y);
+    ofVec3f mouse(x, y, 0);
     polyline.addVertex(mouse);
 
-    while(polyline.size() > maxPoints)
+    while (polyline.size() > maxPoints)
     {
         polyline.getVertices().erase(polyline.getVertices().begin()); // remove oldest
     }
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::mousePressed(int x, int y, int button)
 {
-    ofVec2f mouse(x,y);
+    ofVec3f mouse(x, y, 0);
     polyline.addVertex(mouse);
 
-    while(polyline.size() > maxPoints)
+    while (polyline.size() > maxPoints)
     {
         polyline.getVertices().erase(polyline.getVertices().begin()); // remove oldest
     }
