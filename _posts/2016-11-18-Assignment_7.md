@@ -1,7 +1,7 @@
 ---
 layout:     assignment
 categories: assignment
-title:      Assignment 8
+title:      Assignment 7
 subtitle:   LEDs.
 author:     bakercp
 date:       2016-11-18 00:06:00
