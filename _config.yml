@@ -1,0 +1,7 @@
+name: Experimental Media
+baseurl: /ARTTECH-5010
+url: https://saic-ats.github.io/ARTTECH-5010
+description: ATS 5010
+timezone: America/Chicago
+gems:
+    - jekyll-sitemap

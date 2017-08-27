@@ -1,0 +1,43 @@
+---
+layout:     assignment
+categories: assignment
+title:      Assignment 0
+subtitle:   Gitting Started with Git
+author:     bakercp
+date:       2016-09-02 18:00:00
+due:        2016-09-09
+---
+
+1. Install!
+	- An Integrated Development Environment (IDE)
+		- OSX: Install the latest version of XCode from the [App Store](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12).
+		- Other platforms: We will talk about this in class.
+	- Arduino ([latest version](http://arduino.cc/en/Main/Software))
+	- Processing ([latest version](http://processing.org/download/))
+		- _Why?! We may occasionally cross-reference our oF work with Processing._
+	- Fritzing ([latest version](http://fritzing.org/download/))
+	- Git (follow the instructions for your platform here: [http://git-scm.com/downloads](http://git-scm.com/downloads))
+	- [Source Tree](https://www.sourcetreeapp.com/)
+	- [Atom.io](https://atom.io/)
+2. Sign up!
+	- Sign up for [http://github.com](http://github.com).  Just get a free account OR since you are students get a free private account [here](https://education.github.com/pack).
+	- Sign up for an account at [http://talk.olab.io](http://talk.olab.io).
+3. Set up!
+	- Read Parts of ofBook
+		- [http://openframeworks.cc/ofBook/chapters/foreword.html](http://openframeworks.cc/ofBook/chapters/foreword.html);
+		- [http://openframeworks.cc/ofBook/chapters/of_philosophy](http://openframeworks.cc/ofBook/chapters/of_philosophy);
+		- [http://openframeworks.cc/ofBook/chapters/cplusplus_basics.html](http://openframeworks.cc/ofBook/chapters/cplusplus_basics.html);
+		- [http://openframeworks.cc/ofBook/chapters/ofSketch.html](http://openframeworks.cc/ofBook/chapters/ofSketch.html);
+		- [http://openframeworks.cc/ofBook/chapters/version_control_with_git.html](http://openframeworks.cc/ofBook/chapters/version_control_with_git.html);
+	- [http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855](http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855) (optional)
+4. Check out the following artists.  Come prepared to present one of their projects that inspires you:
+	- [http://rachelbinx.com/](http://rachelbinx.com/)
+	- [http://n-e-r-v-o-u-s.com/](http://n-e-r-v-o-u-s.com/)
+	- [http://csugrue.com/](http://csugrue.com/)
+	- [http://www.gravitytrap.com/](http://www.gravitytrap.com/)
+	- [http://daito.ws/](http://daito.ws/)
+	- [http://jamesgeorge.org/](http://jamesgeorge.org/)
+	- [http://lifewinning.com/](http://lifewinning.com/)
+	- [http://eva-franch.com/](http://eva-franch.com/)
+5. Get Equipment
+	- Acquire an Arduino UNO or newer (in reality older ones with the Atmega 328 or better will be fine).  Arduino UNOs are available in SAIC resale or in the vending machines.  You are welcome to get a newer Arduino (like a Due), but you probably won’t need it.  That said. the Leonardo is pretty nice since it can emulate USB devices like a keyboard.  If you want advice about which board to get, post your question at [http://talk.olab.io](http://talk.olab.io).
