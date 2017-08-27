@@ -393,8 +393,24 @@ _(subject to change based on incoming skills and experience)_
   - Blender || Sketchup || Rhino || Solidworks || Fusion 360?
 
 #### Week 14
-- Advanced Topics and Integration (continued)
-
+- Controlling big signals with small signals.
+  - Relays
+    - AC Relay Dongles
+    - DC Relays
+    - Solid-state vs. Mechanical
+  - Transistors
+    - Ultimately allow small signals to control big ones.
+    - This means they can act as switches or as an amplifier (amplifying the effect of the small signal)
+    - Computers / Integrated Chips use millions / billions of transistors to create complex logic.
+    - Types
+      - Low power (small signals)
+      - High power (large current / voltage)
+    - Previously Vacuum tubes
+      - Expensive
+      - Hot
+      - Short-lived
+    - How does it actually work? https://www.youtube.com/watch?v=IcrBqCFLHIY
+    - Intro to using one: https://www.youtube.com/watch?v=-td7YT-Pums
 #### Week 15
 
 - Advanced Topics and Integration (continued)
