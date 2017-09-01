@@ -6,7 +6,7 @@ title:  Syllabus
 ## Experimental Media, ATS 5010
 
 Semester, Year
-:   Fall, 2016
+:   Fall, 2017
 
 Meeting Times
 :   Friday 9am-12pm
@@ -15,12 +15,15 @@ Meeting Location
 :   MacLean 401
 
 Instructor
-:   [Christopher Baker](http://christopherbaker.net)
+:   [Christopher Baker](https://christopherbaker.net)
+
+Teaching Assistant
+:   TBA
 
 --------------------------------------------------------------------------------
 
 ### Instructor Bio
-[Christopher Baker](http://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [http://github.com/bakercp](http://github.com/bakercp).
+[Christopher Baker](https://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
 
 --------------------------------------------------------------------------------
 
@@ -53,9 +56,8 @@ The course may include workshops and several small projects, relevant technical 
 
 - [ofBook](https://github.com/openframeworks/ofBook)
 - Getting Started with Arduino, Second Edition, By Massimo Banzi (aka GSA)
-- Programming Interactivity, Second Edition By Josha Noble (aka PI)
 
-_Note: Both O'Reilly books are available in DRM-free eBook form from [http://oreilly.com/](http://oreilly.com/).  Steep discounts are available: [http://www.google.com/?q=coupon+oreilly.com](http://www.google.com/?q=coupon+oreilly.com)._
+_Note: O'Reilly books are available in DRM-free eBook form from [http://oreilly.com/](http://oreilly.com/).  Steep discounts are available: [http://www.google.com/?q=coupon+oreilly.com](https://www.google.com/?q=coupon+oreilly.com)._
 
 ### Reading and other Resources
 Posted on the course website.
@@ -77,7 +79,7 @@ Students wait-listed for classes will be admitted on a space available basis det
 Grades are credit / no-credit for this course. Credit for the course is given when _all_ assignments are completed.
 
 ### Writing Assistance
-[Writing Center](http://www.saic.edu/webspaces/portal/advising/write\_center.html)
+[Writing Center](http://www.saic.edu/academics/academicresources/writingcenter/)
 
 ### Special Needs
 [Disability and Learning Resource Center](http://www.saic.edu/lifeatsaic/wellnesscenter/disabilityandlearningresourcecenter/)
@@ -86,23 +88,46 @@ Grades are credit / no-credit for this course. Credit for the course is given wh
 
 _(subject to change based on incoming skills and experience)_
 
-#### Week 1
+#### Week 00
 - Introduction to course
     - How does this fit in with other courses?  
     - History of course?
     - What does it mean for us?
+      - Community is essential!
 - Introduction to each other, generate reference to project of interest.
-- Survey of Creative Coding Platforms
+- Survey of Contemporary Creative Coding Platforms
     - History
-    - Contemporary Options w/ Examples
-        - [openFrameworks](http://openframeworks.cc/) vs. [Processing](http://processing.org/) vs. [p5.js](http://p5js.org/) vs. [ProcessingJS](http://processingjs.org/)
-        - [openFrameworks](http://openframeworks.cc/) vs. [Nodebox](http://nodebox.net/)
-        - [openFrameworks](http://openframeworks.cc/) vs. [libCinder](http://libcinder.org/)
-        - [MaxMSP/Jitter](http://cycling74.com/products/max/) vs. [VVVV](http://vvvv.org/) vs. [PD](http://puredata.info/) vs. [QuartzComposer](http://en.wikipedia.org/wiki/Quartz_Composer)
-        - [Unity3D](http://unity3d.com/) vs [Unreal Engine](https://www.unrealengine.com/)
+      - [Aesthetics and Computation Group](http://acg.media.mit.edu)
+      - [Design by Numbers](http://dbn.media.mit.edu), [img](http://dbn.media.mit.edu/images/dbnwork.gif)
+      - People
+        - [John Maeda](https://maedastudio.com)
+        - [Megan Galbraith Donahue](https://www.linkedin.com/in/megang)
+        - [Golan Levin](http://www.flong.com)
+        - [Casey Reas](http://reas.com)
+        - [Ben Fry](http://benfry.com)
+        - ... and others.
+    - Contemporary Tooling Options w/ Examples
+      - Non-visual Programming Frameworks
+        - [Processing](https://processing.org/)
+          - Getting started: [http://hello.processing.org/](http://hello.processing.org/)
+          - Variations
+            - Javascript: [https://p5js.org/](https://p5js.org/)
+            - Android: [http://android.processing.org/](http://android.processing.org/)
+            - Python: [http://py.processing.org/](http://py.processing.org/)
+        - [libCinder](https://libcinder.org/)
+        - [openFrameworks](http://openFrameworks.cc)
+      - Visual Programming Frameworks
+        - [Max](https://cycling74.com/products/max/)
+        - [VVVV](http://vvvv.org/)
+        - [Touch Designer](https://www.derivative.ca)
+        - [PD](http://puredata.info/)
+        - [Grasshopper](http://www.grasshopper3d.com/)
+      - Hybrid Programming Frameworks
+        - [Unity3D](http://unity3d.com/)
+        - [Unreal Engine](https://www.unrealengine.com/)
     - The future?
 
-#### Week 2
+#### Week 01
 - Survey of Creative Hardware Hacking Platforms
     - History
         - [PIC](https://en.wikipedia.org/wiki/PIC_microcontroller)
@@ -148,7 +173,7 @@ _(subject to change based on incoming skills and experience)_
             3. ... conditions that allow change the transitions between "states".
         - Traffic light example and diagram.
 
-#### Week 3
+#### Week 02
 - Continue Finite State Machine code to include traffic light.
 - Talk about homework of including a button with an additional state.
 - Representing "reality" with computers.
@@ -183,7 +208,7 @@ _(subject to change based on incoming skills and experience)_
         - Pull down resistor.
     - Digital Output
 
-#### Week 4
+#### Week 03
 - Microcontrollers
     - Analog Input
         - ADC "bit depth" - Arduino UNO - 10 bit ADC
@@ -197,7 +222,7 @@ _(subject to change based on incoming skills and experience)_
         - PWM
         - Dedicated DAC
 
-#### Week 5
+#### Week 04
 - Communication
     - Serial
         - [more](https://learn.sparkfun.com/tutorials/serial-communication/rules-of-serial)
@@ -229,8 +254,7 @@ _(subject to change based on incoming skills and experience)_
     - DB9 Connector
     - USB to DB9 connector
 
-#### Week 6
-
+#### Week 05
 - Introduction to the command line.
     - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
 - Introduction to git / github.
@@ -305,7 +329,7 @@ _(subject to change based on incoming skills and experience)_
 - Materials Roundup
     - e.g. [http://www.inventables.com/](http://www.inventables.com/) 
 
-#### Week 7
+#### Week 06
 - Object-Oriented-Programming (OOP) vs. ?
     - `ofDrawRectctangle` vs. `ofRectangle`
 - What is a `class`? (what is a `struct`?)
@@ -348,14 +372,14 @@ _(subject to change based on incoming skills and experience)_
     - repetition
     - randomness
 
-#### Week 8
+#### Week 07
 - Advanced Programming Theory / Syntax
 - openFrameworks/Arduino
 - Functions
 - OOP (Object oriented programming), Classes, Objects
 - Arrays
 
-#### Week 9
+#### Week 08
 - Intermediate I/O
 - openFrameworks:
 - Audio I/O
@@ -364,10 +388,10 @@ _(subject to change based on incoming skills and experience)_
   - Intermediate sensors (gyro, accelerometer, GPS, capacitive touch, etc)
   - Audio/Video on the Arduino (Survey)
 
-#### Week 10
+#### Week 09
 - Intermediate I/O (continued)
 
-#### Week 11
+#### Week 10
 - Advanced I/O (Input/Output)
 - openFrameworks:
   - Live Network feeds (push and pull)
@@ -379,7 +403,7 @@ _(subject to change based on incoming skills and experience)_
   - Advanced sensor/device communication SPI
   - Advance IC interfacing / Bitbanging (bitwise operators)
 
-#### Week 13
+#### Week 11
 - Advanced Topics and Integration
   - "The circle of life" agile digital fabrication and advanced output scan, modify, print, repeat
 - Topics include:
@@ -392,7 +416,7 @@ _(subject to change based on incoming skills and experience)_
   - Meshlab
   - Blender || Sketchup || Rhino || Solidworks || Fusion 360?
 
-#### Week 14
+#### Week 12
 - Controlling big signals with small signals.
   - Relays
     - AC Relay Dongles
@@ -411,6 +435,6 @@ _(subject to change based on incoming skills and experience)_
       - Short-lived
     - How does it actually work? https://www.youtube.com/watch?v=IcrBqCFLHIY
     - Intro to using one: https://www.youtube.com/watch?v=-td7YT-Pums
-#### Week 15
 
+#### Week 13
 - Advanced Topics and Integration (continued)
