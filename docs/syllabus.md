@@ -125,7 +125,7 @@ _(subject to change based on incoming skills and experience)_
       - Hybrid Programming Frameworks
         - [Unity3D](http://unity3d.com/)
         - [Unreal Engine](https://www.unrealengine.com/)
-    - The future?
+    - [A nice comprehensive list](https://github.com/terkelg/awesome-creative-coding#frameworks--libraries--ecosystems)
 
 #### Week 01
 - Survey of Creative Hardware Hacking Platforms
