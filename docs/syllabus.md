@@ -122,6 +122,7 @@ _(subject to change based on incoming skills and experience)_
         - [Touch Designer](https://www.derivative.ca)
         - [PD](http://puredata.info/)
         - [Grasshopper](http://www.grasshopper3d.com/)
+        - [Isadora](https://troikatronix.com/)
       - Hybrid Programming Frameworks
         - [Unity3D](http://unity3d.com/)
         - [Unreal Engine](https://www.unrealengine.com/)
