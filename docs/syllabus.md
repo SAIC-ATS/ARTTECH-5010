@@ -18,7 +18,7 @@ Instructor
 :   [Christopher Baker](https://christopherbaker.net)
 
 Teaching Assistant
-:   TBA
+:   Paul Perez
 
 --------------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ _(subject to change based on incoming skills and experience)_
       - Community is essential!
 - Introduction to each other, generate reference to project of interest.
 - Survey of Contemporary Creative Coding Platforms
-    - History
+    - Very Incomplete History of Processing / openFrameworks
       - [Aesthetics and Computation Group](http://acg.media.mit.edu)
       - [Design by Numbers](http://dbn.media.mit.edu), [img](http://dbn.media.mit.edu/images/dbnwork.gif)
       - People
@@ -130,16 +130,35 @@ _(subject to change based on incoming skills and experience)_
 
 #### Week 01
 - Survey of Creative Hardware Hacking Platforms
-    - History
+    - First, what is the difference between a microcontroller (e.g. Arduino) and a Personal Computer (e.g. Laptop, Raspberry Pi, etc?)
+      - "Real Time" Is precise timing _extremely_ important? (e.g. a CNC machine or a Balancing Robot)
+      - Single Task / Capability vs. Multiple Tasks / Capabilities
+      - Cost (?)
+      - Size (?)
+    - Some PCs are purpose built to have some micro-controller-like capabilities (e.g. real-time control with a parallel port, RTOS, etc)
+    - Some microcontrollers are purpose built to have PC-like capabilities (e.g. Wifi, Multimedia, screens, etc)
+
+    - Recent History
         - [PIC](https://en.wikipedia.org/wiki/PIC_microcontroller)
+          - Closed source toolchain, development tools.
+          - Complicated.
+          - Cheap hardware!
         - [Basic Stamp](https://en.wikipedia.org/wiki/BASIC_Stamp)
+          - Closed source toolchain, development tools.
+          - Much easier!
+          - Very expensive.
     - Contemporary Options with Examples
+        - Very Incomplete and Disputed History of Wiring / Arduino
+          - Interaction Design Institute Ivrea (IDII) in Ivrea, Italy
+          - Hernando Barragán creates Wiring as an Masters Thesis
+          - ~2003 Massimo Banzi, David Mellis, David Cuartielles, added support for the cheaper ATmega8 and started Arduino but didn't invite Barragán.
         - [Arduino](https://www.sparkfun.com/categories/103?page=all) (in all of its forms, clones, etc)
           - Oh Arduino.
-            - Roots in [Wiring](http://wiring.org.co/) which has roots in Processing
+            - Roots in [Wiring](http://wiring.org.co/) [History of The Arduino](https://arduinohistory.github.io/) which has roots in Processing
             - Arduino? Genuino? Arduino.org?
               - [http://www.arduino.org/](http://www.arduino.org/) vs. [http://www.arduino.cc/](http://www.arduino.cc/)
               - [One perspective here](http://makezine.com/2015/03/19/massimo-banzi-fighting-for-arduino/) and [another here](https://hackaday.com/2015/05/22/arduino-vs-arduino-these-are-not-the-droids/).
+          - Now they are [back together](https://blog.arduino.cc/2017/07/28/a-new-era-for-arduino-begins-today/)
           - Anyway, recent favorites ...
             - [Teensy](https://www.sparkfun.com/categories/267)
             - [ESP8266](https://www.sparkfun.com/products/13678)
@@ -158,12 +177,20 @@ _(subject to change based on incoming skills and experience)_
         - The future?
 - So what are we going to focus on?
     - Software
-        - [openFrameworks](http://openframeworks.cc/) as our IDE (C/C++)
-        - "Arduino" Language (C/C++)
+        - [openFrameworks](http://openframeworks.cc/) (C/C++)
+        - [Arduino](https://www.arduino.cc/) (C/C++)
     - Hardware
-        - Desktop / Laptop / Raspberry Pi
+        - Personal Computers
+          - Desktop / Laptop
+          - ARM Computers, e.g. Raspberry Pi
         - Arduino-compatible Microcontrollers
 
+- Introduction to the command line.
+    - [Intro to the Terminal](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
+- Introduction to C++ with the command line.
+- Introduction to openFrameworks.
+
+#### Week 02
 - How do I approach a programming problem?
     - Can you explain it in words?
     - If not in words, can you draw it in pictures?
@@ -173,8 +200,6 @@ _(subject to change based on incoming skills and experience)_
             2. ... a valid set of transitions between "states".
             3. ... conditions that allow change the transitions between "states".
         - Traffic light example and diagram.
-
-#### Week 02
 - Continue Finite State Machine code to include traffic light.
 - Talk about homework of including a button with an additional state.
 - Representing "reality" with computers.
@@ -256,8 +281,6 @@ _(subject to change based on incoming skills and experience)_
     - USB to DB9 connector
 
 #### Week 05
-- Introduction to the command line.
-    - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
 - Introduction to git / github.
     - https://github.com/olab-io/microWorkshops/blob/master/Git_Intro/Git_Intro.md
     - https://github.com/openframeworks/ofBook/blob/master/chapters/version_control_with_git/chapter.md
