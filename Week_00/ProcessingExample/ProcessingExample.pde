@@ -3,7 +3,6 @@ int counter = 0;
 void setup()
 {
   size(640, 480);
-  background(255, 0, 0);
 }
 
 
@@ -29,4 +28,3 @@ void draw()
     ellipse(mouseX, mouseY, 30, 30);
   }
 }
-

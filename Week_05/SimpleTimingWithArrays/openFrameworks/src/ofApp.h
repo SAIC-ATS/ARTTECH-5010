@@ -18,7 +18,7 @@ public:
     unsigned long long rectangleDelays[numRectangles] = { 250, 500, 1000 };
     unsigned long long nextRectangleBlinkTime[numRectangles] = { 0, 0, 0 };
 
-    void setup();
-    void draw();
+    void setup() override;
+    void draw() override;
 
 };

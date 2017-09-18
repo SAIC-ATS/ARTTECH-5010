@@ -5,7 +5,8 @@ const int BUTTON_PINS[NUM_BUTTONS] = { 13, 12, 8, 7, 4, 2 };
 
 int ledBrightnesses[NUM_LEDS] = { 0, 0, 0, 0, 0, 0 };
 
-void setup() {
+void setup()
+{
   for (int i = 0; i < NUM_LEDS; i++)
   {
     pinMode(LED_PINS[i], OUTPUT);
@@ -19,7 +20,8 @@ void setup() {
   Serial.begin(9600);
 }
 
-void loop() {
+void loop()
+{
   for (int i = 0; i < NUM_BUTTONS; i++)
   {
     if (digitalRead(BUTTON_PINS[i]) == false)
@@ -48,7 +50,6 @@ void loop() {
 
   for (int i = 0; i < NUM_LEDS; i++)
   {
-
     analogWrite(LED_PINS[i], ledBrightnesses[i]);
   }
 

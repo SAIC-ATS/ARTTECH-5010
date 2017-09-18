@@ -1,18 +1,12 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
 void ofApp::setup()
 {
     ofSetFrameRate(1); // set our refresh / frame rate to 1 frame / second.
-
-    delayOne = 500;
-    delayTwo = 500;
-
-    isOn = true;
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::draw()
 {
     ofBackground(0); // set the background to black

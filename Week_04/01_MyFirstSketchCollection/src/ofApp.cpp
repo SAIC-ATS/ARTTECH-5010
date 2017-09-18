@@ -1,16 +1,15 @@
 #include "ofApp.h"
 
 
-//--------------------------------------------------------------
-void ofApp::setup(){
-
+void ofApp::setup()
+{
     myPositions = { 0, 0, 0, 0, 0 };
     myIncrements = { 1, 2, 3, 4, 5};
 }
 
-//--------------------------------------------------------------
-void ofApp::update(){
 
+void ofApp::update()
+{
     for (std::size_t i = 0; i < myPositions.size(); i++)
     {
         myPositions[i] = myPositions[i] + myIncrements[i];
@@ -23,8 +22,9 @@ void ofApp::update(){
     }
 }
 
-//--------------------------------------------------------------
-void ofApp::draw(){
+
+void ofApp::draw()
+{
     ofBackground(0);
 
     for (float position: myPositions)
@@ -32,24 +32,3 @@ void ofApp::draw(){
         ofDrawEllipse(position, 20, 20, 20);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

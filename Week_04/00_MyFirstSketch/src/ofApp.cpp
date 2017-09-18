@@ -1,12 +1,13 @@
 #include "ofApp.h"
 
 
-//--------------------------------------------------------------
-void ofApp::setup(){
+void ofApp::setup()
+{
 }
 
-//--------------------------------------------------------------
-void ofApp::update(){
+
+void ofApp::update()
+{
     xPosition = xPosition + 1;
 
     if (xPosition > ofGetWidth())
@@ -15,8 +16,9 @@ void ofApp::update(){
     }
 }
 
-//--------------------------------------------------------------
-void ofApp::draw(){
+
+void ofApp::draw()
+{
     ofBackground(0);
 
     ofSetColor(255, 255, 0);
@@ -37,4 +39,3 @@ void ofApp::draw(){
     ofDrawEllipse(xMouse, yMouse, 20, 20);
 
 }
-

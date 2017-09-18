@@ -1,14 +1,11 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
 void ofApp::setup()
 {
     ofSetFrameRate(30);
-    ofEnableAlphaBlending();
 }
 
-//------------------------------------------------------------------------------
 void ofApp::draw()
 {
     ofBackground(0);
@@ -45,7 +42,7 @@ void ofApp::draw()
 
         // Uncomment the following to draw based on the amount of time left
         // before the next blink happens.
-        
+
 //        unsigned long long timeUntilNextBlink = nextRectangleBlinkTime[i] - now;
 //
 //        float percent = ofNormalize(timeUntilNextBlink,0,rectangleDelays[i]);

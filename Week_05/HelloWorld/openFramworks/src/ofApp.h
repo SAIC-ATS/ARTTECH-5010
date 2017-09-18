@@ -3,15 +3,16 @@
 
 #include "ofMain.h"
 
+
 // this is the header file
 class ofApp: public ofBaseApp // ofApp "extends" the ofBaseApp class, which defines basic program functionality
 {
 public:
-    void setup();
-    void draw();
+    void setup() override;
+    void draw() override;
 
-    int delayOne;
-    int delayTwo;
+    int delayOne = 500;
+    int delayTwo = 500;
 
-    bool isOn;
+    bool isOn = true;
 };

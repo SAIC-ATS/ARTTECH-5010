@@ -7,11 +7,10 @@
 class ofApp: public ofBaseApp
 {
 public:
-    void setup();
-    void update();
-    void draw();
+    void setup() override;
+    void draw() override;
 
-    void mousePressed(int x, int y, int button);
+    void mousePressed(int x, int y, int button) override;
 
     std::vector<ofRectangle> buttons;
     std::vector<ofColor> onColors;

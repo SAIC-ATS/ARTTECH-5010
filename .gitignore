@@ -8,6 +8,8 @@ Project.xcconfig
 *.xcodeproj
 *.plist
 
+a.out
+
 *.sln
 *.vcxproj
 *.vcxproj.filters

@@ -1,12 +1,11 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
 void ofApp::setup()
 {
     ofEnableAlphaBlending();
     ofSetFrameRate(30);
-    
+
     buttons.push_back(ofRectangle(10,10,100,100));
     buttons.push_back(ofRectangle(120,10,100,100));
     buttons.push_back(ofRectangle(230,10,100,100));
@@ -25,16 +24,11 @@ void ofApp::setup()
 
 }
 
-//------------------------------------------------------------------------------
-void ofApp::update()
-{
-}
 
-//------------------------------------------------------------------------------
 void ofApp::draw()
 {
     ofBackground(0);
-    
+
     for(int i = 0; i < buttons.size(); i++)
     {
         ofFill();
@@ -70,7 +64,7 @@ void ofApp::draw()
     }
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::mousePressed(int x, int y, int button)
 {
     // if this function is called, then we know a mouse button was pressed!

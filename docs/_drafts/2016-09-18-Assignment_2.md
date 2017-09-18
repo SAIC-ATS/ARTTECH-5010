@@ -32,7 +32,7 @@ due:        2016-09-23
             - Why might it be important to avoid the `delay()` function?
         - Control
             - What is an `if` / `else` statement?
-            - What is an `if` / `else if` / `else` statment?
+            - What is an `if` / `else if` / `else` statement?
         - Timing
             - What is the `millis()` function and how does it work?
             - What is the `micros()` function and how does it work?

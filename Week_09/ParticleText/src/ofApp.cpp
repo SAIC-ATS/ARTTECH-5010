@@ -1,15 +1,26 @@
 #include "ofApp.h"
 
 
-//------------------------------------------------------------------------------
+
 void ofApp::setup()
 {
     ofSetFrameRate(60);
     ofEnableAlphaBlending();
     ofEnableSmoothing();
 
+
     // we load our font with contours (see the docs for more info on the args)
-    font.loadFont("verdana.ttf", 50, true, true, true);
+    ofTtfSettings settings(OF_TTF_SANS, 50);
+
+    settings.addRanges(ofAlphabet::Chinese);
+    settings.addRanges(ofAlphabet::Japanese);
+    settings.addRanges(ofAlphabet::Korean);
+
+    settings.contours = true;
+    settings.antialiased = true;
+
+    // Load the settings.
+    font.load(settings);
 
     // we initialize a new particles system and wrap it in a shared pointer
     // so that we don't have to worry about calling `delete`.  Remember, if
@@ -31,10 +42,17 @@ void ofApp::setup()
     rawText = TextUtilities::stripPunctuation(rawText); // remove (some) punctuation
 
     // finally, get our words
-    words = TextUtilities::splitIntoWords(rawText);
+//    words = TextUtilities::splitIntoWords(rawText);
+
+    // Add some other words.
+    words.push_back("Hello");
+    words.push_back("여보세요");
+//    words.push_back("你好");
+//    words.push_back("こんにちは");
+
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::update()
 {
     if(ofGetFrameNum() % 10 == 0)
@@ -46,7 +64,7 @@ void ofApp::update()
     particleSystem->update();
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::draw()
 {
     // draw the particle system
@@ -87,49 +105,9 @@ void ofApp::newParticle()
     particleSystem->addParticle(particle);
 }
 
-//------------------------------------------------------------------------------
+
 void ofApp::keyPressed(int key)
 {
     newParticle();
     ofToggleFullscreen();
-}
-
-//------------------------------------------------------------------------------
-void ofApp::keyReleased(int key)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::windowResized(int w, int h)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg)
-{
-}
-
-//------------------------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo)
-{
 }
