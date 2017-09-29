@@ -44,7 +44,7 @@ void checkInput() {
 
 void checkTransition() {
 
-  long now = millis();
+  unsigned long now = millis();
 
   if (now > nextTransitionTime)
   {
