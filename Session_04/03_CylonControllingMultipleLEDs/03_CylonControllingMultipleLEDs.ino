@@ -1,8 +1,8 @@
 // Define how many pins we are using.
-const int NUM_PINS = 8;
+const int NUM_PINS = 6;
 
 // Define all of the PWM pins. //You will probably have to change these
-const int LED_PINS[NUM_PINS] = {6, 7, 8, 9, 10, 11, 12, 13};
+const int LED_PINS[NUM_PINS] = { 11, 10, 9, 6, 5, 3};
 
 // LED Brightness values.
 int ledValues[NUM_PINS] = {0, 0, 0, 0, 0, 0};
@@ -28,22 +28,25 @@ int currentPin = 0;
 // This tells us whether we are going up the array, or down the array.
 bool goingUp = true;
 
-void setup() {
+void setup()
+{
 }
 
-void loop() {
+void loop()
+{
   checkInput();
   checkTransition();
   updateValues();
   setOuput();
 }
 
-void checkInput() {
+void checkInput()
+{
   timerInterval = analogRead(POT_PIN);
 }
 
-void checkTransition() {
-
+void checkTransition()
+{
   unsigned long now = millis();
 
   if (now > nextTransitionTime)
@@ -70,8 +73,9 @@ void checkTransition() {
   }
 }
 
-void updateValues() {
-  long now = millis();
+void updateValues()
+{
+  unsigned long now = millis();
 
   if (now > nextDecrementTime)
   {
@@ -84,7 +88,8 @@ void updateValues() {
   }
 }
 
-void setOuput() {
+void setOuput()
+{
   for (int i = 0; i < NUM_PINS; i++)
   {
     analogWrite(LED_PINS[i], ledValues[i]);

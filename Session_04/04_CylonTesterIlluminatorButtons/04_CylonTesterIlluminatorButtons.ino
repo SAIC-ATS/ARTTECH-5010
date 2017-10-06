@@ -41,12 +41,8 @@ void loop()
     Serial.print(ledBrightnesses[i]);
     Serial.print(",");
 
-
     Serial.println();
   }
-
-
-
 
   for (int i = 0; i < NUM_LEDS; i++)
   {
