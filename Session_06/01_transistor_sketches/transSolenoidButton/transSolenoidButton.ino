@@ -1,13 +1,13 @@
 // Press a button to trigger a solenoid
 
 // Pin are button is on
-const int BUTTON_PIN = 2;
+const int BUTTON_PIN = 12;
 
 //..for reference/debug
 const int LED_PIN = 13;
 
 //pin our output/transistor is hooked up to
-const int OUTPUT_PIN = 7;
+const int OUTPUT_PIN = 6;
 
 
 //debouncing stuff

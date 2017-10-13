@@ -1,9 +1,8 @@
 //Button on and off state
 //solenoid will repeatedly trigger during button on state
 
-const int BUTTON_PIN = 2;
-const int LED_PIN = 13;
-const int OUTPUT_PIN = 7;
+const int BUTTON_PIN = 12;
+const int OUTPUT_PIN = 6;
 
 unsigned long lastDebounceTime = 0;
 unsigned long bounceDelay = 10;
@@ -24,8 +23,6 @@ void setup()
 {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(OUTPUT_PIN, OUTPUT);
-  pinMode(LED_PIN, OUTPUT);
-  
 }
 
 void loop() 
@@ -59,7 +56,6 @@ void checktime()
 {
   if (now - previousMillis >= timerPlus)
   {   
-      digitalWrite(LED_PIN, LOW);
       digitalWrite(OUTPUT_PIN, LOW);
       
       previousMillis = now;     
@@ -68,14 +64,12 @@ void checktime()
   {
     if (buttonState)
     {
-      digitalWrite(LED_PIN, HIGH);
       digitalWrite(OUTPUT_PIN, HIGH);
     }
   }
   else
   {
-    digitalWrite(LED_PIN, LOW);
-    digitalWrite(OUTPUT_PIN, LOW);
+     digitalWrite(OUTPUT_PIN, LOW);
   } 
 }
 
