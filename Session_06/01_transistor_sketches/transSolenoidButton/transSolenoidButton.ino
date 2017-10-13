@@ -1,14 +1,13 @@
-//Press a button to trigger a solenoid
+// Press a button to trigger a solenoid
 
-
-//pin are button is on
-const int buttonPin = 2;
+// Pin are button is on
+const int BUTTON_PIN = 2;
 
 //..for reference/debug
-const int led = 13;
+const int LED_PIN = 13;
 
 //pin our output/transistor is hooked up to
-const int outputPin = 7;
+const int OUTPUT_PIN = 7;
 
 
 //debouncing stuff
@@ -18,13 +17,12 @@ unsigned long bounceDelay = 10;
 int buttonState = LOW;
 int lastButtonState = LOW;
 
-//unsigned long now=0;
 
 void setup()
 {
-  pinMode(buttonPin, INPUT_PULLUP);
-  pinMode(outputPin, OUTPUT);
-  pinMode(led, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(OUTPUT_PIN, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
   
 }
 
@@ -32,10 +30,10 @@ void loop()
 {
     unsigned long now = millis();
     
-    //read the value form out button pin
-    int reading = digitalRead(buttonPin);
+    // read the value form out button pin
+    int reading = digitalRead(BUTTON_PIN);
 
-    //did it change?
+    // did it change?
     if (reading != lastButtonState)
     {
       lastDebounceTime = now;
@@ -58,20 +56,16 @@ void loop()
 
     lastButtonState = reading;
   
-
 }
 
 void buttonPressed()
 {
-  
-  digitalWrite(outputPin, HIGH);
+  digitalWrite(OUTPUT_PIN, HIGH);
 }
 
 void buttonReleased()
 {
-  
-  digitalWrite(outputPin, LOW);
-  
+  digitalWrite(OUTPUT_PIN, LOW); 
 }
 
 
