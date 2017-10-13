@@ -441,6 +441,19 @@ _(subject to change based on incoming skills and experience)_
   - Blender || Sketchup || Rhino || Solidworks || Fusion 360?
 
 #### Week 12
+- Kinetic Output
+    - Motors
+        - AC / DC Motors
+        - Gear Motors
+        - Stepper Motors
+        - Servos
+            - Hobby / Professional
+        - Hybrid Steppers
+    - Solenoids
+        - Push
+        - Pull
+        - Rotary
+
 - Controlling big signals with small signals.
   - Relays
     - AC Relay Dongles
