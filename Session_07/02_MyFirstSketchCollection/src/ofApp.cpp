@@ -4,7 +4,13 @@
 void ofApp::setup()
 {
     myPositions = { 0, 0, 0, 0, 0 };
-    myIncrements = { 1, 2, 3, 4, 5};
+    myIncrements = { 1, 2, 3, 4, 5 };
+    myColors = { ofColor::red,
+                 ofColor::green,
+                 ofColor::blue,
+                 ofColor::cyan,
+                 ofColor::white };
+
 }
 
 
@@ -18,7 +24,6 @@ void ofApp::update()
         {
             myPositions[i] = 0;
         }
-
     }
 }
 
@@ -27,8 +32,9 @@ void ofApp::draw()
 {
     ofBackground(0);
 
-    for (float position: myPositions)
+    for (std::size_t i = 0; i < myPositions.size(); i++)
     {
-        ofDrawEllipse(position, 20, 20, 20);
+        ofSetColor(myColors[i]);
+        ofDrawEllipse(myPositions[i], 20, 20, 20);
     }
 }

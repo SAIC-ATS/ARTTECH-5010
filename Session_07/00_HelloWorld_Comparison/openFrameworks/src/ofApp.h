@@ -8,6 +8,7 @@
 class ofApp: public ofBaseApp // ofApp "extends" the ofBaseApp class, which defines basic program functionality
 {
 public:
+    // override means that we are inheriting setup() from ofBaseApp and defining this method ourselves.
     void setup() override;
     void draw() override;
 

@@ -1,24 +1,19 @@
 #include "ofApp.h"
 
 
-void ofApp::setup()
+void ofApp::draw()
 {
-}
-
-
-void ofApp::update()
-{
+    // Update the xPosition.
     xPosition = xPosition + 1;
 
+    // When the xPosition gets too big, we reset it to zero.
     if (xPosition > ofGetWidth())
     {
         xPosition = 0;
     }
-}
 
+    // Drawing below!
 
-void ofApp::draw()
-{
     ofBackground(0);
 
     ofSetColor(255, 255, 0);

@@ -11,6 +11,8 @@ public:
 	void update() override;
 	void draw() override;
 
-	float xPosition = 0;
+	std::vector<float> myPositions;
+	std::vector<float> myIncrements;
+    std::vector<ofColor> myColors;
 
 };

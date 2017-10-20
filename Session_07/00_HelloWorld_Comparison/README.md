@@ -1,0 +1,1 @@
+These programs compare and contrast a basic blinking "light" in both openFrameworks and Arduino.
